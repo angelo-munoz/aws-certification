@@ -2,7 +2,8 @@
 
 ## Getting started
 1. Clone the repo
-2. Deploy using `SAM CLI` or `Cloudformation`. 
+2. Run the `AWS configure` command to set region and access and secret access key. 
+3. Deploy using `SAM CLI` or `Cloudformation`. 
 ``` bash
-> aws sam deploy --stack-name <stack-name> --guided
+> sam deploy --stack-name <stack-name> --guided
 ```
