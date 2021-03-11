@@ -37,10 +37,10 @@ aws s3 rm $bucket/index.html
 aws s3 rb $bucket
 ```
 
-Your webpage will now display `hello!` 
+Your webpage will now display `hello!!` 
 
 ### Troubleshooting
-If you try to overwrite the file using the `echo` command like the example below and get a bash error, open the file with `nano` and manually edit and save. 
+While SSH'd in, if you try to overwrite the file using the `echo` command like the example below and get a bash error, open the file with `nano` and manually edit and save. 
 ``` bash
 echo "<h1>hello!!</h1>" > /var/www/html/index.html
 ```
