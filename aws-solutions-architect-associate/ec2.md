@@ -1,7 +1,7 @@
 ﻿# EC2
 
 ## Simple boot strap script: bash
-Use with the AWS linux AMI, in the `user data` section when launching your EC2 instance. Since this script will run as `root`, don't include the `sudo` comands. According to the AWS docs on [user data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html): 
+Use with the AWS linux AMI, in the `user data` section when launching your EC2 instance. Since this script will run as `root`, don't include the `sudo` comands. According to the [AWS docs] (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html) on user data: 
 > Scripts entered as user data are run as the root user, so do not use the sudo command in the script. Remember that any files you create will be owned by root; if you need non-root users to have file access, you should modify the permissions accordingly in the script. Also, because the script is not run interactively, you cannot include commands that require user feedback (such as yum update without the -y flag).`
 
 ```bash
