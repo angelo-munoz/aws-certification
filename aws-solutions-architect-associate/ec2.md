@@ -42,7 +42,7 @@ Your webpage will now display `hello!!`
 ### Troubleshooting
 While SSH'd in, if you try to overwrite the file using the `echo` command like the example below and get a bash error, open the file with `nano` and manually edit and save. 
 ``` bash
-echo "<h1>hello!!</h1>" > /var/www/html/index.html
+echo "<h1>hello v2!</h1>" > /var/www/html/index.html
 ```
 
 
