@@ -5,5 +5,5 @@
 2. Run the `AWS configure` command to set region and access and secret access key. 
 3. Deploy using `SAM CLI` or `Cloudformation`. 
 ``` bash
-> sam deploy --stack-name <stack-name> --guided
+> sam deploy --stack-name <stack-name> --guided --region <region>
 ```
