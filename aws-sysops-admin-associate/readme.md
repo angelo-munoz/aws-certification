@@ -56,3 +56,8 @@ aws s3 ls
 # ref: https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html
 aws s3 --region us-east-1 --endpoint-url vpce-1234.s3.us-east-1.vpce.amazonaws.com ls
 ```
+
+## Budgets
+
+Notes: 
+- Budgets can send notifications, send SNS message, trigger EC2/RDS stop action. 
