@@ -37,6 +37,12 @@ MySQL> select * from Sample;
 # 1 row in set (0.01 sec)
 ```
 
+References: 
+- https://www.tutorialspoint.com/mysql/mysql-insert-query.htm
+
+Notes: 
+- An Aurora MySQL replica runs in MySQL read-only mode so no changes to data or schema allowed: `ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement`
+
 ## VPC
 **VPC S3 endpoints**
 
