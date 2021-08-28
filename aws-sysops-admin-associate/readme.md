@@ -2,6 +2,41 @@
 My practice scripts/study for the [sysops admin associate](https://aws.amazon.com/certification/certified-sysops-admin-associate/) exam. 
 
 
+## Exercise 1.
+
+Create a solution with EC2 and Aurora RDS. RDS and EC2 should be in a private subnet, as well as EC2. Use a bastion to SSH into the EC2 instance. Bastion is restricted to your own IP address. RDS accessed from app security group only, app security group accessed from bastion security group only.  
+
+**EC2 commands**
+```sh
+# ssh to bastion: public IP. This IP has been dead for a while.. don't even try it 😂
+ssh ec2-user@52.87.228.85 -i <path_to_key_pair_file>
+
+# ssh to app: private IP. Testing w a small network. 
+ssh ec2-user@192.168.5.253 -i <path_to_key_pair_file>
+
+# connect to aurora instance: get DNS name from RDS console
+mysql -u admin -h <path_to_aurora_instance> -p <database_name>
+# enter mysql password: ___ 
+# connection successful.. run mysql commands against aurora instance
+
+#create sample db table
+MySQL> create table Sample ( sample_id INT NOT NULL AUTO_INCREMENT, sample_title varchar(128) not null, sample_date date, primary key (sample_id) );
+# >: Query OK, 0 rows affected (0.02 sec)
+
+# insert sample records and retrieve
+MySQL> insert Sample (sample_title) values('test title');
+# >: Query OK, 1 row affected (0.00 sec)
+
+# see my values
+MySQL> select * from Sample;
+# +-----------+--------------+-------------+
+# | sample_id | sample_title | sample_date |
+# +-----------+--------------+-------------+
+# |         1 | test title   | NULL        |
+# +-----------+--------------+-------------+
+# 1 row in set (0.01 sec)
+```
+
 ## VPC
 **VPC S3 endpoints**
 
