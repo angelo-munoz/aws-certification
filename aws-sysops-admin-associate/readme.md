@@ -5,12 +5,13 @@ My practice scripts/study for the [sysops admin associate](https://aws.amazon.co
 ## VPC
 **VPC S3 endpoints**
 
-Endpoints. CLI Command: 
+Endpoints. CLI Command. 
 ```sh
 # gateway endpoints
 aws s3 ls
 # interface endpoints
 # use the `--region` and `--endpoint-url` params
 # todo: this command didn't work for me. troubleshoot 
+# ref: https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html
 aws s3 --region us-east-1 --endpoint-url vpce-1234.s3.us-east-1.vpce.amazonaws.com ls
 ```
