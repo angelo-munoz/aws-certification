@@ -129,3 +129,17 @@ Properties:
               Stat: Minimum
 
 ```
+
+## CLI
+
+- `--filter` or `--filters`. _Server-side_ filtering. Example: filter RDS instances for the engine. 
+```sh
+# use shorthand syntax to pass in name,value pair param
+> aws rds describe-db-instances --filters Name=engine,Values=aurora-mysql
+```
+
+- `query`. _Client-side_ filtering. 
+```sh
+# query for the first volume in our list of volumes
+aws ec2 describe-volumes --query 'Volumes[0]'
+```
