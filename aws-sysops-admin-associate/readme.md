@@ -143,3 +143,7 @@ Properties:
 # query for the first volume in our list of volumes
 aws ec2 describe-volumes --query 'Volumes[0]'
 ```
+
+## AWS Config
+
+Set Rules for compliance and remediation actions executed by Systems Manager automation/runbooks. Create rule, and configure remediation actions.  
