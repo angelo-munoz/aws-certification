@@ -61,3 +61,25 @@ aws s3 --region us-east-1 --endpoint-url vpce-1234.s3.us-east-1.vpce.amazonaws.c
 
 Notes: 
 - Budgets can send notifications, send SNS message, trigger EC2/RDS stop action. 
+
+## Cloudwatch insights
+Log aggregation and analytics. Examples: 
+```sh
+#show last 20 error entries: with text 'Access denied'. 
+# filter is CASE SENSITIVE!
+fields @timestamp, @message
+| filter @message like /Access denied/
+| sort @timestamp desc
+| limit 20
+
+#error rate per hour
+# filter is CASE SENSITIVE!
+# bin function slices timestamp data - use with aggregate functions
+ filter @message like /Access denied/
+| stats count(*) as error_count by bin(1h)
+| sort error_count desc
+
+# message rate per hour
+| stats count(*) as rate by bin(1h)
+| sort rate desc
+```
