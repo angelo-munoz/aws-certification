@@ -83,3 +83,49 @@ fields @timestamp, @message
 | stats count(*) as rate by bin(1h)
 | sort rate desc
 ```
+
+## Cloudwatch alarms
+Alarm with multiple metrics and expression. 
+```yml
+# Alarm for monitoring the rate of CPU Utilization change 
+Type: AWS::CloudWatch::Alarm
+Properties:
+    AlarmName: EC2-CPU-Change-Rate
+    AlarmDescription: alarm if change rate surpasses 1 per 5 min
+    ActionsEnabled: true
+    OKActions: []
+    AlarmActions:
+        - arn:aws:ssm:us-east-1:712222334398:opsitem:3
+        - arn:aws:sns:us-east-1:712222334398:NotifyMe
+    InsufficientDataActions: []
+    Dimensions: []
+    EvaluationPeriods: 1
+    DatapointsToAlarm: 1
+    Threshold: 200
+    ComparisonOperator: GreaterThanThreshold
+    TreatMissingData: notBreaching
+    Metrics:
+        - Id: e1
+          Label: Rate Of Change
+          ReturnData: true
+          Expression: m1-m2
+        - Id: m1
+          ReturnData: false
+          MetricStat:
+              Metric:
+                  Namespace: AWS/EC2
+                  MetricName: CPUUtilization
+                  Dimensions: []
+              Period: 300
+              Stat: Maximum
+        - Id: m2
+          ReturnData: false
+          MetricStat:
+              Metric:
+                  Namespace: AWS/EC2
+                  MetricName: CPUUtilization
+                  Dimensions: []
+              Period: 300
+              Stat: Minimum
+
+```
