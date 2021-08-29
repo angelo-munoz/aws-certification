@@ -132,7 +132,7 @@ Properties:
 
 ## CLI
 
-- `--filter` or `--filters`. _Server-side_ filtering. Example: filter RDS instances for the engine. 
+- `--filter` or `--filters`. _Server-side_ filtering. See [Filtering CLI output](https://docs.aws.amazon.com/cli/latest/userguide/cli-usage-filter.html) for details. Example: filter RDS instances for the engine. 
 ```sh
 # use shorthand syntax to pass in name,value pair param
 > aws rds describe-db-instances --filters Name=engine,Values=aurora-mysql
