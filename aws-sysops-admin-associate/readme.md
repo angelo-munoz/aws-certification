@@ -63,7 +63,7 @@ Notes:
 - Budgets can send notifications, send SNS message, trigger EC2/RDS stop action. 
 
 ## Cloudwatch insights
-Log aggregation and analytics. Examples: 
+Log aggregation and analytics. My Examples below. Also see [Sample Queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax-examples.html) in the AWS docs.  
 ```sh
 #show last 20 error entries: with text 'Access denied'. 
 # filter is CASE SENSITIVE!
