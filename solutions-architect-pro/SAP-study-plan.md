@@ -5,10 +5,15 @@
     display: inline;
     font-size: 80%;
     color:#f55;
-    font-weight:normal;
+    font-weight:normal;    
   }
   time {
-    color:#88f;
+    color:#6bf;
+    margin-left: 0.5em;
+  }
+  done {
+    initial: "&#x2713;";
+    color: green;
   }
 </style>
 
@@ -25,26 +30,26 @@ TOTAL | 100
 
 # Domains
 
-## Domain 1: Design for Organizational Complexity
+## Domain 1: Design for Organizational Complexity <time>6 weeks</time>
 1.1 Determine _cross-account authentication_ and _access strategy_ for complex organizations. - <time>1 week<time>
 
-   - Analyze the organizational structure <sup>AWS organizations</sup>
+   - Analyze the organizational structure <sup>cross-account auth</sup>
    - Evaluate the current authentication infrastructure <sup>AD connector, AWS SSO</sup>
    - Analyze the AWS resources at an account level <sup>?</sup>
-   - Determine an auditing strategy for authentication and access <sup>?</sup>
+   - Determine an auditing strategy for authentication and access <sup>cloud trail</sup>
 
-1.2 Determine how to design networks for complex organizations. 
-  - Outline an IP addressing strategy for VPCs <sup>subnetting</sup> <time>1 week</time>
-  - Determine DNS strategy <sup>Route53</sup>
-  - Classify network traffic and security <sup>VPC</sup>
+1.2 Determine how to design networks for complex organizations. <time>3 weeks</time>
+  - Outline an IP addressing strategy for VPCs <sup>subnetting, overlapping IP's, VPC peering</sup> <time>1 week</time>
+  - Determine DNS strategy <sup>Route53</sup><time>3 days</time>
+  - Classify network traffic and security <sup>port numbers?, VPC, securing a network - NACL, security groups, WAF, Shield</sup><time>2 days</time>
   - Determine connectivity needs for hybrid environments <sup>Direct Connect, VPN</sup> <time>1 week</time>
-  - Determine a way to audit network traffic <sup></sup> <time>2 days</time>
+  - Determine a way to audit network traffic <sup>VPC flow logs</sup> <time>2 days</time>
 
-1.3 Determine how to design a multi-account AWS environment for complex organizations. - **1 week**
-  - Determine how to use AWS Organizations
-  - Implement the most appropriate account structure for proper cost allocation, agility, and security
-  - Recommend a central audit and event notification strategy 
-  - Decide on an access strategy
+1.3 Determine how to design a multi-account AWS environment for complex organizations. - <time>2 weeks</time>
+  - Determine how to use AWS Organizations <time>1 day</time>
+  - Implement the most appropriate account structure for proper cost allocation, agility, and security <sup>Organizations, cost explorer, SCP, stack sets</sup> <time>3 days</time>
+  - Recommend a central audit and event notification strategy <sup>cloud trail, event bridge</sup><time>3 days</time>
+  - Decide on an access strategy <sup>AD connector, SimpleAD, AWS Directory service for AD</sup><time>4 days</time>
  
 ## Domain 2: Design for New Solutions
 2.1 Determine security requirements and controls when designing and implementing a solution.
