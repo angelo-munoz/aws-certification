@@ -20,3 +20,14 @@ Combining multiple ethernets to act a single subnet. https://openvpn.net/communi
 
 ### Amazon time sync service
 Amazon time sync service. Accessible at 169.254.169.123. https://aws.amazon.com/blogs/aws/keeping-time-with-amazon-time-sync-service/
+
+### DHCP Option sets
+VPC setting to change DHCP options for instances launched in that VPC. 
+Options: 
+- DNS
+- NTP
+- Domain name
+- Net bios node servers
+- Net bios node type
+
+Reference: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html
