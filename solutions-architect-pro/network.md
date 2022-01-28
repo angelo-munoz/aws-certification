@@ -14,4 +14,9 @@ A network design allowing multiple networks/VPC's to connect and communicate ove
 **Alternatives**
 - [Transit gateway + Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-aws-transit-gateway.html), [AWS Cloud hub](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-vpn-cloudhub.html)
 
-- Ethernet bridging. Combining multiple ethernets to act a single subnet. https://openvpn.net/community-resources/ethernet-bridging/
+
+### Ethernet bridging
+Combining multiple ethernets to act a single subnet. https://openvpn.net/community-resources/ethernet-bridging/
+
+### Amazon time sync service
+Amazon time sync service. Accessible at 169.254.169.123. https://aws.amazon.com/blogs/aws/keeping-time-with-amazon-time-sync-service/
