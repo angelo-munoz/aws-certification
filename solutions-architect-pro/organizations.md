@@ -8,8 +8,17 @@
 - Orgs integrate with stack sets for cross-region automation
 - Benefits: consolidated billing, centralized account mgmt, centralized security
 - AWS Quotas integration
+- Use trusted service principals to allow services to access your organization or perform work on its behalf
 
-## References
+### SCP exceptions: 
+1. Only **accounts** created after Sept 15, 2017 can control these actions with SCP's. That is, accounts before this date cannot control these actions with SCP's: 
+    - Enable or disable multi-factor authentication on the root user
+    - Create, update, or delete x.509 keys for the root user
+    - Change the root user's password
+    - Create, update, or delete root access keys
+
+
+### References
 - [Service Control Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
 - [Establishing your best practice AWS environment](https://aws.amazon.com/organizations/getting-started/best-practices/)
 - [Best Practices for Organizational Units with AWS Organizations](https://aws.amazon.com/blogs/mt/best-practices-for-organizational-units-with-aws-organizations/)
