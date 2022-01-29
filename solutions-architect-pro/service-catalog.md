@@ -1,10 +1,14 @@
+<style>
+    sup { color:#f00; }
+</style>
+
 # Service Catalog
 Managed service allowing users to deploy predefined workloads from a product catalog. 
 
 - uses cloudformation templates
 - integrates with ITSM systems (service now, Jira service desk, AWS Config)
 - AppRegistry allows devs to deploy pre-built applications
-- Manage licenses with Step functions (not lambda) and AWS License Manager
+- Manage license overrages with Cloudwatch > Step functions (not lambda) > dynamoDB > AWS License Manager
 
 ### Cost
 - Free tier (up to 1000 API calls)
@@ -13,3 +17,4 @@ Managed service allowing users to deploy predefined workloads from a product cat
 
 ### References
 - [AWS Service Catalog](https://aws.amazon.com/servicecatalog/?aws-service-catalog.sort-by=item.additionalFields.createdDate&aws-service-catalog.sort-order=desc)
+- [Reference Architectures](https://github.com/aws-samples/aws-service-catalog-reference-architectures). <sup>Very useful!</sup>
