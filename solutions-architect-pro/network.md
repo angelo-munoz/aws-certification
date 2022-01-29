@@ -31,3 +31,6 @@ Options:
 - Net bios node type
 
 Reference: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html
+
+### NTP
+[Network Time Protocol (NTP)](https://en.wikipedia.org/wiki/Network_Time_Protocol) is used for time sync bw systems. UDP port 123. 
