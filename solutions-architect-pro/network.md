@@ -11,6 +11,9 @@ A network design allowing multiple networks/VPC's to connect and communicate ove
 - Can be used for NAT for overlapping IP's
 - Use network packet inspection. https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/transit-vpc-option.html
 
+**Disadvantages**
+- High maintenance cost (not managed) 
+
 **Alternatives**
 - [Transit gateway + Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-aws-transit-gateway.html), [AWS Cloud hub](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-vpn-cloudhub.html)
 
