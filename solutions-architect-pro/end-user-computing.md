@@ -1,4 +1,4 @@
-# Business Solutions
+# End-User Computing
 
 ### Amazon Worklink
 mobile devices securely access corporate data using AWS as pass-through. 
