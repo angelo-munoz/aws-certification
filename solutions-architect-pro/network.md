@@ -37,3 +37,9 @@ Reference: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.htm
 
 ### NTP
 [Network Time Protocol (NTP)](https://en.wikipedia.org/wiki/Network_Time_Protocol) is used for time sync bw systems. UDP port 123. 
+
+## MPLS network
+[Multiprotocol label switching](https://en.wikipedia.org/wiki/Multiprotocol_Label_Switching) is a routing protocol that uses packet labels to route traffic at layer 2.5 (not 2 or 3) instead of the layer 3 routing like OSPF, EIGRP. 
+
+References: 
+- Micro nugget youtube. [MPLS explained](https://www.youtube.com/watch?v=huKkCK8AJ7I&t=1s)
