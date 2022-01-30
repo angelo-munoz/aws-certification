@@ -37,3 +37,9 @@ Conceptual steps:
 References: 
 - [IAM Identity Providers](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html)
 - [Cognito Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html)
+
+### Federated Console access with google
+Federate access to the AWS Console following these steps:
+1. [Create google app](https://developers.google.com/identity/protocols/oauth2/openid-connect)
+2. Configure 
+3. Test
