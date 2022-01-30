@@ -22,7 +22,7 @@
 - Service principal. AWS Organizations use trusted service principals
 
 ### IAM Identity Providers
-Provides federated access to AWS Resources. Same concept as [Cognito Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html). Not sure of the difference really. Need to research. 
+Provides federated access to AWS Resources. Same concept as [Cognito Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html) and Cognito Identity pools use IAM Identity providers under the hood. The difference is [use Cognito for web and mobile apps](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-scenarios_federated-users.html#id_roles_common-scenarios_federated-users-cognito). 
 
 Setup following the same conceptual steps as Cognito Identity pools, only Cognito Identity pools automates a couple steps that are manual in the IAM Identity providers. ex: creating the roles. 
 
