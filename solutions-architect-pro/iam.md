@@ -1,3 +1,14 @@
+<style>
+    note { 
+        border: 1px solid #3bf;
+        padding: 1em; 
+        display: block;
+        margin: 0.5em;
+        /* background-color: #4af;*/
+        border-radius: 0.5em;
+        prefix: "Note: "
+    }
+</style>
 # IAM
 
 ### PARC model
@@ -9,3 +20,20 @@
 ### Principal
 - User or role. 
 - Service principal. AWS Organizations use trusted service principals
+
+### IAM Identity Providers
+Provides federated access to AWS Resources. Same concept as [Cognito Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html). Not sure of the difference really. Need to research. 
+
+Setup following the same conceptual steps as Cognito Identity pools, only Cognito Identity pools automates a couple steps that are manual in the IAM Identity providers. ex: creating the roles. 
+
+Conceptual steps: 
+1. Create the IdP connection
+2. Create a role that federated users will assume. 
+3. Configure trust bw IdP and Identity Provider. <note>💡 Note: Built-in with Cognito IdP</note>
+4. Configure IAM policy that the role will use
+
+<note>💡Note: Cognito Identity pools has concept of unauthenticated roles</notes>
+
+References: 
+- [IAM Identity Providers](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html)
+- [Cognito Identity Pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-identity.html)
