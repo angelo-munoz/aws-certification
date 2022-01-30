@@ -43,3 +43,6 @@ Federate access to the AWS Console following these steps:
 1. [Create google app](https://developers.google.com/identity/protocols/oauth2/openid-connect)
 2. Configure 
 3. Test
+
+### Cross-account Access
+This is now a [legacy feature](https://aws.amazon.com/blogs/security/how-to-enable-cross-account-access-to-the-aws-management-console/) with the newer approach being to use [cross-account access by switching roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_cross-account-with-roles.html) 
