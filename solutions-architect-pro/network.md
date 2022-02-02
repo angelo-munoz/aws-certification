@@ -43,3 +43,13 @@ Reference: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.htm
 
 References: 
 - Micro nugget youtube. [MPLS explained](https://www.youtube.com/watch?v=huKkCK8AJ7I&t=1s)
+
+## Elastic Network Interface
+- AWS Network card
+- created/managed separate from instance
+- **same AZ as instance**
+- can have multiple ENI per instance (1 primary and multiple secondary)
+- Each ENI can have multiple IP addresses
+
+References: 
+- [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)
