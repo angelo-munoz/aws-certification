@@ -1,6 +1,6 @@
 # Networking
 
-### Transit VPC's
+## Transit VPC's
 A network design allowing multiple networks/VPC's to connect and communicate over a shared network. Similar to hub and spoke model. 
 ![](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/image23.png)
 
@@ -18,13 +18,11 @@ A network design allowing multiple networks/VPC's to connect and communicate ove
 - [Transit gateway + Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-aws-transit-gateway.html), [AWS Cloud hub](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-vpn-cloudhub.html)
 
 
-### Ethernet bridging
+## Ethernet bridging
 Combining multiple ethernets to act a single subnet. https://openvpn.net/community-resources/ethernet-bridging/
 
-### Amazon time sync service
-Amazon time sync service. Accessible at 169.254.169.123. https://aws.amazon.com/blogs/aws/keeping-time-with-amazon-time-sync-service/
 
-### DHCP Option sets
+## DHCP Option sets
 VPC setting to change DHCP options for instances launched in that VPC. 
 Options: 
 - DNS
@@ -35,8 +33,10 @@ Options:
 
 Reference: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html
 
-### NTP
-[Network Time Protocol (NTP)](https://en.wikipedia.org/wiki/Network_Time_Protocol) is used for time sync bw systems. UDP port 123. 
+## NTP
+[Network Time Protocol (NTP)](https://en.wikipedia.org/wiki/Network_Time_Protocol) is used for time sync bw systems. 
+- UDP port 123. 
+- Amazon time sync service. Accessible at 169.254.169.123. https://aws.amazon.com/blogs/aws/keeping-time-with-amazon-time-sync-service/
 
 ## MPLS network
 [Multiprotocol label switching](https://en.wikipedia.org/wiki/Multiprotocol_Label_Switching) is a routing protocol that uses packet labels to route traffic at layer 2.5 (not 2 or 3) instead of the layer 3 routing like OSPF, EIGRP. 
