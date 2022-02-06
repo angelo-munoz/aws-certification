@@ -1,6 +1,14 @@
 # Compute
 
 ## Load Balancers
+
+| Feature | Network LB | Application LB | Gateway LB | Classic LB|
+| --- | --- | --- | --- | ---
+OSI layer | 4 | 7 | | |
+Routing | Basic (IP/port). Layer 4 | Advanced (Http headers, path, body, etc) - layer 7 | | |
+Speed | millions request/sec | | | |
+Use cases | High performance | Intelligent routing | | |
+
 ## Network Load balancer
 - used for high perfomance (supports millions of requests/second)
 - works at layer 4
