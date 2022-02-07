@@ -1,6 +1,6 @@
 # End-User Computing
 
-### Amazon Worklink
+## Amazon Worklink
 mobile devices securely access corporate data using AWS as pass-through. 
 - SAML 2.0 support
 - no data stays/cached on device
@@ -10,3 +10,11 @@ mobile devices securely access corporate data using AWS as pass-through.
 - vector graphics rendering
 
 Reference: https://aws.amazon.com/worklink/
+
+## Appstream 2.0   
+
+- Service for securely streaming individual applications
+- differs from Workspaces: AppStream is for individual applications and WorkSpaces is for an entire environment for any use. 
+
+**References:**
+- https://aws.amazon.com/appstream2
