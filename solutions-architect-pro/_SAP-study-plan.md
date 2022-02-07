@@ -174,9 +174,9 @@ relative weight or importance:
 ### AWS services and features
 **Analytics:**
 
-- [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)
-- Amazon Elasticsearch Service
-- Amazon EMR
+- [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html). Use S3 syntax to query S3 files
+- [Amazon Elasticsearch Service](https://aws.amazon.com/opensearch-service/the-elk-stack/what-is-elasticsearch/). Search
+- [Amazon EMR](https://aws.amazon.com/emr/). Big data
 - AWS Glue
 - Amazon Kinesis
 - Amazon QuickSight
