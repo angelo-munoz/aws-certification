@@ -174,7 +174,7 @@ relative weight or importance:
 ### AWS services and features
 **Analytics:**
 
-- Amazon Athena
+- [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html)
 - Amazon Elasticsearch Service
 - Amazon EMR
 - AWS Glue
