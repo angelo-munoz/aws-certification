@@ -177,9 +177,9 @@ relative weight or importance:
 - [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html). Use S3 syntax to query S3 files
 - [Amazon Elasticsearch Service](https://aws.amazon.com/opensearch-service/the-elk-stack/what-is-elasticsearch/). Search
 - [Amazon EMR](https://aws.amazon.com/emr/). Big data
-- AWS Glue
-- Amazon Kinesis
-- Amazon QuickSight
+- [AWS Glue](https://aws.amazon.com/glue/)
+- [Amazon Kinesis](https://aws.amazon.com/kinesis/)
+- [Amazon QuickSight](https://aws.amazon.com/quicksight/)
 
 **AWS Billing and Cost Management:**
 - AWS Budgets
