@@ -74,6 +74,10 @@ Domain Name System. Route53
 - In VPC B (with resources trying to use Route53), create a VPC association using CLI.
 - (*optional*). Remove the association authorization for security?
 
+References: 
+- https://aws.amazon.com/premiumsupport/knowledge-center/route53-private-hosted-zone/
+- https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-associate-vpcs-different-accounts.html
+
 
 ## Route53 Resolver
 DNS service for **hybrid** environments (onprem/cloud)
