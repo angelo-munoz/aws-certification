@@ -1,3 +1,6 @@
+<styles>
+! { font-color: red}
+</styles>
 # Networking
 
 ## Transit VPC's
@@ -53,3 +56,14 @@ References:
 
 References: 
 - [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)
+
+## DNS
+Domain Name System. Route53
+- Port 53
+
+**Private hosted zones**
+- Internal DNS for VPC's
+- create custom internal domains
+  > VPC's `enableDnsHostnames` and `enableDnsSupport` attributes must be set to `true`
+- `Split-view DNS`. Use same domain for internal and external DNS
+- Amazon-provided DNS server is at base of network plus 2. Ex: For the `10.0.0.0/16` network, the DNS will be at `10.0.0.2`. So interesting! did not know this before! 
