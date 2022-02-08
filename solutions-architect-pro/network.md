@@ -67,3 +67,16 @@ Domain Name System. Route53
   > VPC's `enableDnsHostnames` and `enableDnsSupport` attributes must be set to `true`
 - `Split-view DNS`. Use same domain for internal and external DNS
 - Amazon-provided DNS server is at base of network plus 2. Ex: For the `10.0.0.0/16` network, the DNS will be at `10.0.0.2`. So interesting! did not know this before! 
+
+## Route53 Resolver
+DNS service for **hybrid** environments (onprem/cloud)
+- `Inbound`: originates from onPrem to lookup VPC resources
+- `Outbound`: 
+  - originates from VPC to lookup onPrem resources
+  - uses `conditional forwarding rules`: forwards request to onPrem DNS
+- Recursive DNS: one DNS server queries other DNS server to find the right IP address. See [Recursive DNS](https://www.cloudflare.com/learning/dns/what-is-recursive-dns/)
+
+![](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2018/11/19/resolver-1-howitworks-3.png)
+
+**References**: 
+- https://aws.amazon.com/blogs/aws/new-amazon-route-53-resolver-for-hybrid-clouds/
