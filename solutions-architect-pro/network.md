@@ -1,7 +1,9 @@
-<styles>
-! { font-color: red}
-</styles>
 # Networking
+
+## Direct Connect
+- Direct connection to AWS using the AWS backbone network
+- Connection options: from 50 Mbps to 100 Gbps
+- Encryption available using MACSec (built-in) OR IPsec VPN (separate)
 
 ## Transit VPC's
 A network design allowing multiple networks/VPC's to connect and communicate over a shared network. Similar to hub and spoke model. 
