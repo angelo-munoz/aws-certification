@@ -5,6 +5,12 @@
 - Connection options: from 50 Mbps to 100 Gbps
 - Encryption available using MACSec (built-in) OR IPsec VPN (separate)
 
+## Direct Connect Gateway
+- Connect VPC's across regions
+- Several VPC's share the same direct connect
+- [DGW vs VPG vs TGW](https://www.megaport.com/blog/aws-vgw-vs-dgw-vs-tgw/)
+![](https://www.megaport.com/wp-content/uploads/2020/02/awstable1.png)
+
 ## Transit VPC's
 A network design allowing multiple networks/VPC's to connect and communicate over a shared network. Similar to hub and spoke model. 
 ![](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/image23.png)
