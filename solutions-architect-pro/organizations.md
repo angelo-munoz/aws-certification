@@ -9,6 +9,7 @@
 - Benefits: consolidated billing, centralized account mgmt, centralized security
 - AWS Quotas integration
 - Use trusted service principals to allow services to access your organization or perform work on its behalf
+- To exclude reserved instances, in billing console, add the account to the excluded reserved instances sharing
 
 ### SCP exceptions: 
 1. Only **accounts** created after Sept 15, 2017 can control these actions with SCP's. That is, accounts before this date cannot control these actions with SCP's: 
