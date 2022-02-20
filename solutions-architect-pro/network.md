@@ -8,7 +8,7 @@
 ## Direct Connect Gateway
 - Connect VPC's across regions
 - Several VPC's share the same direct connect
-- [DGW vs VPG vs TGW](https://www.megaport.com/blog/aws-vgw-vs-dgw-vs-tgw/)
+- See this megaport article for a comparison: [DGW vs VPG vs TGW](https://www.megaport.com/blog/aws-vgw-vs-dgw-vs-tgw/)
 ![](https://www.megaport.com/wp-content/uploads/2020/02/awstable1.png)
 
 ## Transit VPC's
