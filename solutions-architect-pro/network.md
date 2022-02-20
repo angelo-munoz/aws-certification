@@ -102,3 +102,21 @@ DNS service for **hybrid** environments (onprem/cloud)
 
 **References**: 
 - https://aws.amazon.com/blogs/aws/new-amazon-route-53-resolver-for-hybrid-clouds/
+
+## Shared VPC
+- Efficient way to share network resources (subets) across multiple accounts, or an organization. 
+- Decouple accounts and networks
+- Use Resource access manager (RAM) to share subnets, etc
+- Use when need to centrally manage network resources (by a single team for example)
+
+Benefits: 
+- Separation of duties: centrally controlled VPC structure, routing, IP address allocation.
+- Application owners continue to own resources, accounts, and security groups.
+- VPC sharing participants can reference security group IDs of each other.
+- Efficiencies: higher density in subnets, efficient use of VPNs and AWS Direct Connect.
+- Hard limits can be avoided, for example, 50 VIFs per AWS Direct Connect connection through simplified network architecture.
+- Costs can be optimized through reuse of NAT gateways, VPC interface endpoints, and intra-Availability Zone traffic.
+
+References: 
+- https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html
+- https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/
