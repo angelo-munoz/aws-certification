@@ -1,6 +1,6 @@
 # Storage
 
-## Block storage vs Object vs File Storage
+## Block storage vs Object Storage vs File Storage
 
 | Criteria | Block | Object | File 
 |:---|:---:|:---:|:---:
