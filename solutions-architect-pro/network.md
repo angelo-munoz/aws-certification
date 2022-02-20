@@ -11,6 +11,9 @@
 - See this megaport article for a comparison: [DGW vs VPG vs TGW](https://www.megaport.com/blog/aws-vgw-vs-dgw-vs-tgw/)
 ![](https://www.megaport.com/wp-content/uploads/2020/02/awstable1.png)
 
+**References**:
+- https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways-intro.html
+
 ## Transit VPC's
 A network design allowing multiple networks/VPC's to connect and communicate over a shared network. Similar to hub and spoke model. 
 ![](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/image23.png)
