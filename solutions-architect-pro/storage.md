@@ -4,9 +4,11 @@
 
 | Criteria | Block | Object | File 
 |:---|:---:|:---:|:---:
-Description| |discrete units or objects||
-Includes Metadata | ❌| ✅ |
-Speed | 🐢| ⚡| ?
+Description| files split into blocks, stored across diff disks for efficiency |discrete objects, flexible and customizable |hierarchical, accessed via SMB/NFS. Users define the location
+Includes Metadata | ❌| ✅ | ✅
+Speed | ⚡|🐢| ?
+Scalability | ❌| ✅ | ?
+Use-cases | Databases, mission-critical application storage, virtualized systems. Speed, storage of transactional data, and data that doesn’t require metadata analysis. | Storing unstructured data, storing large data sets, and storing data with custom data preservation, deletion, and retention policies. | Office Content repository 
 
 
 **References** 
