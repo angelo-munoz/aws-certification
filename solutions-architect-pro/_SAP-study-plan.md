@@ -55,54 +55,54 @@ TOTAL | 100
 2.1 Determine security requirements and controls when designing and implementing a solution.
   - Implement infrastructure as code <sup>cloudformation advanced - retain/instance/etc</sup><time>3 days</time>
   - Determine prevention controls for large-scale web applications<sup>cloudformation
-  - Determine roles and responsibilities of applications
-  - Determine a secure method to manage credentials for the solutions/applications
-  - Enable detection controls and security services for large-scale applications
-  - Enforce host and network security boundaries
-  - Enable encryption in transit and at rest
+  - Determine roles and responsibilities of applications <sup>IAM roles</sup>
+  - Determine a secure method to manage credentials for the solutions/applications <sup>Systems Manager Parameter Store, Secrets Manager</sup>
+  - Enable detection controls and security services for large-scale applications <sup>WAF, Inspector, Macie</sup>
+  - Enforce host and network security boundaries <sup>Security groups, NACLs</sup>
+  - Enable encryption in transit and at rest<sup>ACM - TLS cert in transit, KMS - CMK at rest</sup>
 
 2.2 Determine a solution design and implementation strategy to meet reliability requirements.
-  - Design a highly available application environment
-  - Determine advanced techniques to detect for failure and service recoverability
-  - Determine processes and components to monitor and recover from regional service disruptions with regional failover
+  - Design a highly available application environment <sup>multiple AZ's</sup>
+  - Determine advanced techniques to detect for failure and service recoverability <sup>lambda hooks?</sup>
+  - Determine processes and components to monitor and recover from regional service disruptions with regional failover <sup>multi-region architecture - Transit Gateway, Direct Connect Gateway, Route53 failover routing policy</sup>
 
 2.3 Determine a solution design to ensure business continuity.
-  - Architect an automated, cost-effective back-up solution that supports business continuity across multiple AWS Regions
-  - Determine an architecture that provides application and infrastructure availability in the event of a service disruption
+  - Architect an automated, cost-effective back-up solution that supports business continuity across multiple AWS Regions <sup>S3 cross-region replication, DMS</sup>
+  - Determine an architecture that provides application and infrastructure availability in the event of a service disruption <sup>EC2 autoscaling across multiple AZ's, Route53 failover policy, Aurora multi-master, Aurora global tables</sup>
 
 2.4 Determine a solution design to meet performance objectives.
-  - Design internet-scale application architectures
-  - Design an architecture for performance according to business objectives
-  - Apply design patterns to meet business objectives with caches, buffering, and replicas
+  - Design internet-scale application architectures <sup>Kinesis</sup>❗
+  - Design an architecture for performance according to business objectives <sup>RDS read-replica</sup>
+  - Apply design patterns to meet business objectives with caches, buffering, and replicas <sup>Elasticache (Redis, Memcached), SQS, Aurora read-replicas</sup>❗
 
 2.5 Determine a deployment strategy to meet business requirements when designing and implementing a solution.
-  - Determine resource provisioning strategy to meet business objectives
-  - Determine a migration process to change the version of a service
-  - Determine services to meet deployment strategy
-  - Determine patch management strategy
+  - Determine resource provisioning strategy to meet business objectives <sup>Cloudformation, SAM</sup>
+  - Determine a migration process to change the version of a service <sup>blue/green deployment</sup>❗
+  - Determine services to meet deployment strategy <sup>CodeDeploy, CodePipeline, SAM, Cloudformation, Elastic Beanstalk❗</sup>❗
+  - Determine patch management strategy <sup>Systems Manager</sup>❗
  
 ## Domain 3: Migration Planning
 3.1 Select existing workloads and processes for potential migration to the cloud.
-  - Complete an application migration assessment
-  - Classify applications according to the six Rs (re-host, re-platform, re-purchase, refactor, retire, and retain)
+  - Complete an application migration assessment <sup>Application discovery service</sup>❗
+  - Classify applications according to the six Rs (re-host, re-platform, re-purchase, refactor, retire, and retain) <sup>Migration types - 6R's❗❗</sup>
 
 3.2 Select migration tools and/or services for new and migrated solutions based on detailed AWS knowledge.
-  - Select an appropriate database transfer mechanism 
-  - Select an appropriate data transfer service
+  - Select an appropriate database transfer mechanism <sup>DMS, native import/export, backup</sup>
+  - Select an appropriate data transfer service <sup>Storage Gateway, S3 sync, calculate transfer time based on bandwidth</sup>❗
   - Select an appropriate data transfer target
-  - Select an appropriate server migration mechanism
-  - Apply the appropriate security methods to the migration tools
+  - Select an appropriate server migration mechanism <sup>Application migration service, VM Import</sup>❗
+  - Apply the appropriate security methods to the migration tools <sup>IAM?</sup>❗
 
 3.3 Determine a new cloud architecture for an existing solution.
-  - Evaluate business applications and determine the target cloud architecture
-  - Break down the functionality of applications into services
-  - Determine target database platforms
+  - Evaluate business applications and determine the target cloud architecture <sup>design</sup>
+  - Break down the functionality of applications into services <sup>design</sup>
+  - Determine target database platforms <sup>NoSQL, Relational - Aurora, etc</sup>
 
 3.4 Determine a strategy for migrating existing on-premises workloads to the cloud.
-  - Determine the desired prioritization strategy of the organization
-  - Analyze data volume and rate of change to determine a data transfer strategy
-  - Evaluate cutover strategies
-  - Assess internal and external compliance requirements for a successful migration
+  - Determine the desired prioritization strategy of the organization <sup>?</sup>❗
+  - Analyze data volume and rate of change to determine a data transfer strategy <sup>calculate time to transfer based on bandwidth, snow family limits</sup>❗
+  - Evaluate cutover strategies <sup>DMS continuous replication</sup>
+  - Assess internal and external compliance requirements for a successful migration <sup>?</sup>❗
  
 ## Domain 4: Cost Control
 4.1 Select a cost-effective pricing model for a solution.
@@ -153,10 +153,8 @@ business units
 
 ## Which key tools, technologies, and concepts might be covered on the exam?
 
-The following is a non-exhaustive list of the tools and technologies that could appear on the exam. This list is subject to change and is provided to help you understand the general scope of services, features, or 
-technologies on the exam. The general tools and technologies in this list appear in no particular order. 
-AWS services are grouped according to their primary functions. While some of these technologies will likely be covered more than others on the exam, the order and placement of them in this list is no indication of 
-relative weight or importance:
+The following is a non-exhaustive list of the tools and technologies that could appear on the exam. This list is subject to change and is provided to help you understand the general scope of services, features, or technologies on the exam. The general tools and technologies in this list appear in no particular order. 
+AWS services are grouped according to their primary functions. While some of these technologies will likely be covered more than others on the exam, the order and placement of them in this list is no indication of relative weight or importance:
 
 - Compute
 - Cost management
