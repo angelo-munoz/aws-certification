@@ -1,8 +1,6 @@
-<style>
-    sup { color:#f00; }
-</style>
+# Management and Governance
 
-# Service Catalog
+## Service Catalog
 Managed service allowing users to deploy predefined workloads from a product catalog. 
 
 - uses cloudformation templates
@@ -10,11 +8,11 @@ Managed service allowing users to deploy predefined workloads from a product cat
 - AppRegistry allows devs to deploy pre-built applications
 - Manage license overrages with Cloudwatch > Step functions (not lambda) > dynamoDB > AWS License Manager
 
-### Cost
+Cost
 - Free tier (up to 1000 API calls)
 - $0.0007 (14 calls for 1 cent) - us-east-1 & 2
 
 
-### References
+References
 - [AWS Service Catalog](https://aws.amazon.com/servicecatalog/?aws-service-catalog.sort-by=item.additionalFields.createdDate&aws-service-catalog.sort-order=desc)
-- [Reference Architectures](https://github.com/aws-samples/aws-service-catalog-reference-architectures). <sup>Very useful!</sup>
+- [Reference Architectures](https://github.com/aws-samples/aws-service-catalog-reference-architectures)
