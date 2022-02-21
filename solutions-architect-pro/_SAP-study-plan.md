@@ -106,50 +106,49 @@ TOTAL | 100
  
 ## Domain 4: Cost Control
 4.1 Select a cost-effective pricing model for a solution.
-  - Purchase resources based on usage requirements
-  - Identify when to use different storage tiers
+  - Purchase resources based on usage requirements <sup>Reserved instances, EC2 savings plans, Compute savings plans</sup>❗
+  - Identify when to use different storage tiers <sup>durability, availability, etc</sup>
 
 4.2 Determine which controls to design and implement that will ensure cost optimization.
-  - Determine an AWS-generated cost allocation tags strategy that allows mapping cost to 
-business units
-  - Determine a mechanism to monitor when underutilized resources are present
-  - Determine a way to manage commonly deployed resources to achieve governance
-  - Define a way to plan costs that do not exceed the budget amount
+  - Determine an AWS-generated cost allocation tags strategy that allows mapping cost to business units <sup>cost explorer by tag - activate tag for billing first</sup>
+  - Determine a mechanism to monitor when underutilized resources are present <sup>Compute Optimizer, Trusted Advisor</sup>❗❗
+  - Determine a way to manage commonly deployed resources to achieve governance <sup>Config, Systems Manager documents, runbooks</sup>
+  - Define a way to plan costs that do not exceed the budget amount <sup>AWS Budgets</sup>
 
 4.3 Identify opportunities to reduce cost in an existing architecture.
-  - Distinguish opportunities to use AWS Managed Services
-  - Determine which services are most cost-effective in meeting business objectives
+  - Distinguish opportunities to use AWS Managed Services  <sup>Review requirements</sup>
+  - Determine which services are most cost-effective in meeting business objectives <sup>Know service prices!</sup>❗❗
 
 ## Domain 5: Continuous Improvement for Existing Solutions
 5.1 Troubleshoot solutions architectures.
-  - Assess an existing application architecture for deficiencies
-  - Analyze application and infrastructure logs
-  - Test possible solutions in non-production environment
+  - Assess an existing application architecture for deficiencies <sup>Well architected framework</sup>
+  - Analyze application and infrastructure logs <sup>Cloudwatch agent</sup>
+  - Test possible solutions in non-production environment <sup>Cloudformation, SAM</sup>
 
 5.2 Determine a strategy to improve an existing solution for operational excellence.
-  - Determine the most appropriate logging and monitoring strategy
-  - Recommend the appropriate AWS offering(s) to enable configuration management automation
+  - Determine the most appropriate logging and monitoring strategy <sup>Cloudwatch, xray</sup>
+  - Recommend the appropriate AWS offering(s) to enable configuration management automation <sup>Chef, Puppet, Systems Manager</sup>❗
 
 5.3 Determine a strategy to improve the reliability of an existing solution.
-  - Evaluate existing architecture to determine areas that are not sufficiently reliable
-  - Remediate single points of failure
-  - Enable data replication, self-healing, and elastic features and services
-  - Test the reliability of the new solution
+  - Evaluate existing architecture to determine areas that are not sufficiently reliable <sup>Well architected framework</sup>
+  - Remediate single points of failure <sup>Well architected framework</sup>
+  - Enable data replication, self-healing, and elastic features and services <sup>Well archicted framework</sup>
+  - Test the reliability of the new solution <sup>lambda functions, SAM, cloudformation</sup>❗
 
 5.4 Determine a strategy to improve the performance of an existing solution.
-  - Reconcile current performance metrics against performance targets
-  - Identify and examine performance bottlenecks
-  - Recommend and test potential remediation solutions
+  - Reconcile current performance metrics against performance targets <sup>Trusted Advisor, cloudwatch</sup>
+  - Identify and examine performance bottlenecks <sup>CLoudwatch logs, single-points of failure - well architected framework</sup>
+  - Recommend and test potential remediation solutions <sup>cloudformation</sup>
 
 5.5 Determine a strategy to improve the security of an existing solution.
-  - Evaluate AWS Secrets Manager strategy
-  - Audit the environment for security vulnerabilities
-  - Enable manual and/or automated responses to the detection of vulnerabilities
+  - Evaluate AWS Secrets Manager strategy <sup>more expensive than param store but param store lacks key auto-rotation</sup>
+  - Audit the environment for security vulnerabilities <sup>AWS Inspector</sup>
+  - Enable manual and/or automated responses to the detection of vulnerabilities <sup>?</sup>❗
 
 5.6 Determine how to improve the deployment of an existing solution.
-  - Evaluate appropriate tooling to enable infrastructure as code
-  - Evaluate current deployment processes for improvement opportunities
-  - Test automated deployment and rollback strategies
+  - Evaluate appropriate tooling to enable infrastructure as code <sup>cloudwatch, SAM</sup>
+  - Evaluate current deployment processes for improvement opportunities <sup>cloudwatch, SAM</sup>
+  - Test automated deployment and rollback strategies <sup>lambda hooks in pipeline</sup>
 
 ## Which key tools, technologies, and concepts might be covered on the exam?
 
