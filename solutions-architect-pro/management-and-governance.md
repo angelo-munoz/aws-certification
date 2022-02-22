@@ -16,3 +16,8 @@ Cost
 References
 - [AWS Service Catalog](https://aws.amazon.com/servicecatalog/?aws-service-catalog.sort-by=item.additionalFields.createdDate&aws-service-catalog.sort-order=desc)
 - [Reference Architectures](https://github.com/aws-samples/aws-service-catalog-reference-architectures)
+
+## Cloudtrail
+- Audit trail of all changes made to infra and environment via API calls
+- Supports logging on multiple regions with the `multi-region trail` option. 
+- Need to enable global for global services like `IAM`, `Cloudfront`, etc with `include-global-service-events` option
