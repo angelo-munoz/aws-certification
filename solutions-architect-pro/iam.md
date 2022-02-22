@@ -25,7 +25,7 @@
 - Service control policy (SCP) types: approve/deny policies
   - approve: whitelist. you approve max services accounts can access. everything else not allowed
   - deny: blacklist. you deny services accounts can access. everything else approved. 
-- SCP's don't apply to management (master) accounts
+- SCP's don't apply to management (master) accounts, or service-linked roles
 - SCP's apply to all member account users, including root accounts
 - Orgs integrate with stack sets for cross-region automation
 - Benefits: consolidated billing, centralized account mgmt, centralized security
