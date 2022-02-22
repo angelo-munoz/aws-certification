@@ -28,3 +28,8 @@ References:
 - Groups for cost allocation, and permissions
 - Supports linux, Windows in cloud
 - Supports cloud AND on-prem servers (hybrid architecture)
+- Codepipeline more modern? Opsworks legacy? 
+
+References:
+- https://aws.amazon.com/opsworks/stacks/faqs/?nc=sn&loc=5
+- https://docs.aws.amazon.com/opsworks/latest/userguide/other-services-cp.html
