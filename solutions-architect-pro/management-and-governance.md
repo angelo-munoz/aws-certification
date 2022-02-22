@@ -21,3 +21,20 @@ References
 - Audit trail of all changes made to infra and environment via API calls
 - Supports logging on multiple regions with the `is-multi-region-trail` option. 
 - Need to enable global for global services like `IAM`, `Cloudfront`, etc with `include-global-service-events` option
+
+## Systems Manager: Patch manager
+
+- Uses patch baseline (windows/linux/mac, when to apply, exceptions, patch source)
+- auto-approving patches within days of their releas
+- whitelist/blacklist patches
+- maintenance windows
+- hybrid environments (cloud/on-prem)
+- tag-based filtering (apply patches based on tags)
+
+Patch groups: 
+- groupings of instances to which to apply a patch baseline. Can create multiple, by environment for ex (Dev, QA, Prod)
+- Requires a `tag` when creating. `key name is case-sensitive`. The tag is case-sensitive
+- Add tag group in the Patch baseline section. Edit tag baseline patch group. 
+
+
+![](https://media.tutorialsdojo.com/sap_ssm_patch_group.png)
