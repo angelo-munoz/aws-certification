@@ -30,6 +30,9 @@ References:
 - Supports cloud AND on-prem servers (hybrid architecture)
 - Codepipeline more modern? Opsworks legacy? 
 
+Billing:
+- based on number of nodes connected to puppet master (or chef server), running time, and EC2 puppet master (or chef server) run time
+
 References:
 - https://aws.amazon.com/opsworks/stacks/faqs/?nc=sn&loc=5
 - https://docs.aws.amazon.com/opsworks/latest/userguide/other-services-cp.html
