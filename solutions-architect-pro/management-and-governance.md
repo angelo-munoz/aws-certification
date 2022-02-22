@@ -35,6 +35,7 @@ Patch groups:
 - groupings of instances to which to apply a patch baseline. Can create multiple, by environment for ex (Dev, QA, Prod)
 - Requires a `tag` when creating. `key name is case-sensitive`. The tag is case-sensitive
 - Add tag group in the Patch baseline section. Edit tag baseline patch group. 
+- add `Patch Group` tag to instances. case sensitive! 
 
 
 ![](https://media.tutorialsdojo.com/sap_ssm_patch_group.png)
