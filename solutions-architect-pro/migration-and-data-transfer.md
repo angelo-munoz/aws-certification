@@ -11,8 +11,20 @@ References:
 - [Free AWS Cloud Migration Services](https://aws.amazon.com/free/migration/)
 - https://aws.amazon.com/server-migration-service/?p=ft&c=mg&z=3
 
-## Application Migration Service
-- Replaces Server migration service
+## Application Migration Service (MGN)
+- Replaces Server migration service (SMS)
 
 References: 
-- - https://aws.amazon.com/server-migration-service/
+- https://aws.amazon.com/server-migration-service/
+
+## Ops works
+-  configuration management, compliance and security, and continuous deployment
+- Chef and Puppet options
+- Works in stacks and layers
+- Layers have EC2 instances, load balancers, DB's, and other resources types
+- Configuration as Code
+- Autoscaling capability
+- Dashboard shows the status of your stacks across all AWS regions
+- Groups for cost allocation, and permissions
+- Supports linux, Windows in cloud
+- Supports cloud AND on-prem servers (hybrid architecture)
