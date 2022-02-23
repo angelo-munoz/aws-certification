@@ -120,3 +120,15 @@ Benefits:
 References: 
 - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html
 - https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/
+
+## Private Link
+- Creates private connection bw your VPC and another service using the AWS network (private connection - no need for internet)
+- Faster, more reliable connections
+- More secure. Don't have to traverse internet
+
+## Interface Endpoints
+- use private link under the hood
+- creates 2 ENI's across 2 of your subnets, and security group applied to them
+- routes traffic through those ENI's using NAT
+- assumes overlapping IP's so uses NAT under the hood
+- Specific to: AWS Service (EC2, S3, etc), Marketplace, PrivateLink Ready partner services, custom endpoint services (search by name)
