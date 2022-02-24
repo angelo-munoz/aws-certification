@@ -24,8 +24,8 @@ References
 
 ## Systems Manager: Patch manager
 
-- Uses patch baseline (windows/linux/mac, when to apply, exceptions, patch source)
-- auto-approving patches within days of their releas
+- Uses patch baseline (windows/linux/mac, when to apply, exceptions, patch source, auto-approve releases after configurable delay)
+- auto-approving patches within days of their release
 - whitelist/blacklist patches
 - maintenance windows
 - hybrid environments (cloud/on-prem)
@@ -36,6 +36,11 @@ Patch groups:
 - Requires a `tag` when creating. `key name is case-sensitive`. The tag is case-sensitive
 - Add tag group in the Patch baseline section. Edit tag baseline patch group. 
 - add `Patch Group` tag to instances. case sensitive! 
+
+Maintenance Windows: 
+- Set schedules for maintenance
+- Supports maintenance tasks on other AWS resources like S3 buckets, SQS queues, KMS keys, etc. 
+- has a schedule, a max duration, a set of registered targets
 
 
 ![](https://media.tutorialsdojo.com/sap_ssm_patch_group.png)
