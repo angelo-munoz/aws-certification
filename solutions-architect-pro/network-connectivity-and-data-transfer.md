@@ -18,17 +18,17 @@
 A network design allowing multiple networks/VPC's to connect and communicate over a shared network. Similar to hub and spoke model. 
 ![](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/images/image23.png)
 
-**Design:**
+Design:
 - No single point of failure. 99.99 availability w 2 AZ's and redundant VPN links to each router 
 
-**Advantages:** 
+Advantages:
 - Can be used for NAT for overlapping IP's
 - Use network packet inspection. https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/transit-vpc-option.html
 
-**Disadvantages**
+Disadvantages:
 - High maintenance cost (not managed) 
 
-**Alternatives**
+Alternatives:
 - [Transit gateway + Direct Connect](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-aws-transit-gateway.html), [AWS Cloud hub](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-vpn-cloudhub.html)
 
 
@@ -45,7 +45,8 @@ Options:
 - Net bios node servers
 - Net bios node type
 
-Reference: https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html
+Reference: 
+- https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html
 
 ## NTP
 [Network Time Protocol (NTP)](https://en.wikipedia.org/wiki/Network_Time_Protocol) is used for time sync bw systems. 
@@ -100,7 +101,7 @@ DNS service for **hybrid** environments (onprem/cloud)
 
 ![](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2018/11/19/resolver-1-howitworks-3.png)
 
-**References**: 
+References: 
 - https://aws.amazon.com/blogs/aws/new-amazon-route-53-resolver-for-hybrid-clouds/
 
 ## Shared VPC
@@ -132,3 +133,10 @@ References:
 - routes traffic through those ENI's using NAT
 - assumes overlapping IP's so uses NAT under the hood
 - Specific to: AWS Service (EC2, S3, etc), Marketplace, PrivateLink Ready partner services, custom endpoint services (search by name)
+
+## Cloudfront
+- Content delivery
+- Geo restriction
+  - based on country. 
+  - **use 3rd party if need more granular than country**
+- Custom origins: load balancer, pass-through headers
