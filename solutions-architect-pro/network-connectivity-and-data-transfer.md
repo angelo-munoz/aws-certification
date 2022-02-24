@@ -147,5 +147,7 @@ References:
   - by country-level only, and for entire distro (all content). 
     - **more granular needs 3rd party service**
 - Custom origins: load balancer, pass-through headers
-- http to https
+- http to https origin convert
+- use OAI (origin access identity) to restrict access to S3 buckets
+- use `Cache-Control: max-age=N` header to increase cache value
 
