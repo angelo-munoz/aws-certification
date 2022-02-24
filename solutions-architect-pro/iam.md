@@ -79,3 +79,23 @@ Federate access to the AWS Console following these steps:
 
 References: 
 - https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html
+
+## Lightweight directory access protocol (LDAP)
+- Open source
+- lists users, printers and other directory items
+- does authentication
+- not encrypted in transit - needs TLS
+- linked w [Kerberos](https://en.wikipedia.org/wiki/Kerberos_(protocol)) for authentication 
+
+
+![SSO w LDAP](https://media.tutorialsdojo.com/sap_sso_ldap.png)
+
+## Security Assertion Markup Language (SAML)
+- version 2.0 supported by AWS
+- used for integration with identity providers
+- supports SSO
+
+## Single Sign-on (SSO)
+- Uses SAML 2.0
+
+
