@@ -11,7 +11,7 @@
 - See this megaport article for a comparison: [DGW vs VPG vs TGW](https://www.megaport.com/blog/aws-vgw-vs-dgw-vs-tgw/)
 ![](https://www.megaport.com/wp-content/uploads/2020/02/awstable1.png)
 
-**References**:
+References:
 - https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways-intro.html
 
 ## Transit VPC's
@@ -69,9 +69,16 @@ References:
 References: 
 - [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)
 
-## DNS
+## Route53
 Domain Name System. Route53
 - Port 53
+- Routing options:
+  - simple. supports multiple ip addresses with round-robin routing
+  - weighted. define weights to routes. blue/green deployments.
+  - failover. 
+  - geolocation: geo    
+  - geopromixity: use for geo and weighted
+  - multi-value: 
 
 **Private hosted zones**
 - Internal DNS for VPC's
@@ -137,6 +144,8 @@ References:
 ## Cloudfront
 - Content delivery
 - Geo restriction
-  - based on country. 
-  - **use 3rd party if need more granular than country**
+  - by country-level only, and for entire distro (all content). 
+    - **more granular needs 3rd party service**
 - Custom origins: load balancer, pass-through headers
+- http to https
+
