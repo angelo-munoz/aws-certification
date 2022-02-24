@@ -44,3 +44,11 @@ Maintenance Windows:
 
 
 ![](https://media.tutorialsdojo.com/sap_ssm_patch_group.png)
+
+## AWS Config
+- monitor and record state (previous versions) in your environment
+- supports Multi-account, multi-region data aggregation
+
+## Event Bridge
+- serverless event bus
+- make rules, define source, handler and targets (functions, sns topics)
