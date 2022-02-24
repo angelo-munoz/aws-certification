@@ -77,7 +77,7 @@ Domain Name System. Route53
   - weighted. define weights to routes. blue/green deployments.
   - failover. 
   - geolocation: geo    
-  - geopromixity: use for geo and weighted
+  - geopromixity: use for geo and shift traffic from resouces on one location to resources on another 
   - multi-value: 
 
 **Private hosted zones**
