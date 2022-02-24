@@ -149,5 +149,5 @@ References:
 - Custom origins: load balancer, pass-through headers
 - http to https origin convert
 - use OAI (origin access identity) to restrict access to S3 buckets
-- use `Cache-Control: max-age=N` header to increase cache value
-
+- Origins use `Cache-Control: max-age=N` header to increase Cloudfront cache retention (increase cache hit ratio)
+- Use Field-level encryption (up to 10 data fields) uses public/private key auth. 
