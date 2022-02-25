@@ -8,6 +8,11 @@
         - SSM Param store: single store for configuration and secrets
         - Secrets mgr: dedicated secrets store with lifecycle management
     - `Docker Secrets`. Secrets mgr for Docker Swarm, not used w ECS
+- For spot instances to use `connection draining` must **manually** set this option: `ECS_ENABLE_SPOT_INSTANCE_DRAINING=true` in the local `/etc/ecs/ecs.config` file. 
+
+Spot instances cluster: 
+- Choose `Diversified` provisioning mode which lets ECS choose the best instance size
+    - combined w spot instance draining keeps uptime high.  
 
 ## Apache Camel
 - Open source integration framework. 

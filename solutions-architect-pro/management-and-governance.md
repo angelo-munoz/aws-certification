@@ -46,8 +46,10 @@ Maintenance Windows:
 ![](https://media.tutorialsdojo.com/sap_ssm_patch_group.png)
 
 ## AWS Config
+- Set rules to monitor. Config will alert w option to auto-remediate with systems manager documents integration. 
 - monitor and record state (previous versions) in your environment
-- supports Multi-account, multi-region data aggregation
+- supports Multi-account, **multi-region** (global) data aggregation
+
 
 ## Event Bridge
 - serverless event bus
