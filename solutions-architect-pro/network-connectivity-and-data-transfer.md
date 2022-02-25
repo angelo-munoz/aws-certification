@@ -151,3 +151,4 @@ References:
 - use OAI (origin access identity) to restrict access to S3 buckets
 - Origins use `Cache-Control: max-age=N` header to increase Cloudfront cache retention (increase cache hit ratio)
 - Use Field-level encryption (up to 10 data fields) uses public/private key auth. 
+- Use [origin groups with failover option](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html) to increase availability. If origin 1 fails, CF routes request to secondary. 
