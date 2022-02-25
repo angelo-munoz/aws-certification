@@ -47,6 +47,7 @@ Maintenance Windows:
 
 ## AWS Config
 - Set rules to monitor. Config will alert w option to auto-remediate with systems manager documents integration. 
+- Use [AWS Managed rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html), or [custom rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules.html) (requires lambda function)
 - monitor and record state (previous versions) in your environment
 - supports Multi-account, **multi-region** (global) data aggregation
 
