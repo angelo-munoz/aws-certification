@@ -4,6 +4,14 @@
 - Direct connection to AWS using the AWS backbone network
 - Connection options: from 50 Mbps to 100 Gbps
 - Encryption available using MACSec (built-in) OR IPsec VPN (separate)
+- Need [Public Virtual Interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html) for VPN over Direct Connect
+
+Virtual Interfaces: 
+|Type | Description|
+|:---|:---|
+Private VIF | Private IP's. Internal use
+Public VIF | communicate with all AWS services. Required for VPN over Direct Connect
+Transit VIF | access Amazon VPC Transit Gateways associated with Direct Connect gateways
 
 ## Direct Connect Gateway
 - Connect VPC's across regions
