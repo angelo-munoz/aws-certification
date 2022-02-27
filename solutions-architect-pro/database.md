@@ -1,6 +1,7 @@
 # Database
 
 ## Aurora
+- Supports cross-region read-replica *
 **Aurora Global Database**
 
 - Built-in cross-region replication

@@ -45,6 +45,15 @@ Maintenance Windows:
 
 ![](https://media.tutorialsdojo.com/sap_ssm_patch_group.png)
 
+## Systems Manager: Session Manager
+- connect to EC2 instances in cloud (needs instance profiles - roles)
+    - role needs `AmazonSSMManagedInstanceCore` policy
+    - prerequisites: 
+        - https outbound to ssm, ec2
+- connect to onprem VM's using `hybrid activation`
+    - IAM service role associated with the hybrid activation used to register your on-permises servers
+
+
 ## AWS Config
 - Set rules to monitor. Config will alert w option to auto-remediate with systems manager documents integration. 
 - Use [AWS Managed rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html), or [custom rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_develop-rules.html) (requires lambda function)
