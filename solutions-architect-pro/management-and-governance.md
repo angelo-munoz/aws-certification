@@ -46,12 +46,23 @@ Maintenance Windows:
 ![](https://media.tutorialsdojo.com/sap_ssm_patch_group.png)
 
 ## Systems Manager: Session Manager
-- connect to EC2 instances in cloud (needs instance profiles - roles)
+- connect to EC2 instances in cloud with session manager (needs instance profiles - roles)
     - role needs `AmazonSSMManagedInstanceCore` policy
     - prerequisites: 
         - https outbound to ssm, ec2
 - connect to onprem VM's using `hybrid activation`
     - IAM service role associated with the hybrid activation used to register your on-permises servers
+    > ❗You can't change the IAM service role associated with a hybrid activation. If you find that the service role does not contain the required permissions, you must deregister the managed instance and register it with a new hybrid activation that uses a service role with the required permissions
+- Get security credentials (`access key`, `secret access key`, `sessionKey`) from instance `meta-data` using the CLI command: 
+```sh
+# get from instance profile
+TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
+&& curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/iam/security-credentials/
+
+# get from instance role name
+TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
+&& curl -H "X-aws-ec2-metadata-token: $TOKEN" -v http://169.254.169.254/latest/meta-data/iam/security-credentials/<instance-role-name>
+```
 
 
 ## AWS Config
