@@ -32,8 +32,11 @@ References:
 - default file system used by linux 
 
 ## Simple Storage Service (S3)
+
+Presigned Urls: 
 - get presigned urls from CLI using the `presign` command: 
 ```
 aws s3 presign s3://am-2022-02-26/test.txt --expires-in 30
 ```
+- can [upload to folders](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html) using presigned urls. Very interesting! 
 
