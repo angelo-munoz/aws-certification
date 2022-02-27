@@ -34,6 +34,12 @@ References:
 ## Simple Storage Service (S3)
 
 Presigned Urls: 
+|Session Type|Signed Url Valid for 
+|---|---
+IAM instance profile|Up to 6 hours.
+AWS STS|Up to 36 hours when signed with permanent credentials, such as the credentials of the AWS account root user or an IAM user.
+IAM user|Up to 7 days when using AWS Signature Version 4.
+
 - get presigned urls from CLI using the `presign` command: 
 ```
 aws s3 presign s3://am-2022-02-26/test.txt --expires-in 30
