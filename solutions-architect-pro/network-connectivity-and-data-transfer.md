@@ -88,15 +88,14 @@ Domain Name System. Route53
   - geopromixity: use for geo and shift traffic from resouces on one location to resources on another 
   - multi-value: 
 
-**Private hosted zones**
+Private hosted zones:
 - Internal DNS for VPC's
 - create custom internal domains
   > VPC's `enableDnsHostnames` and `enableDnsSupport` attributes must be set to `true`
 - `Split-view DNS`. Use same domain for internal and external DNS
 - Amazon-provided DNS server is at base of network plus 2. Ex: For the `10.0.0.0/16` network, the DNS will be at `10.0.0.2`. So interesting! did not know this before! 
 
-**Cross-account VPC's using a private hosted zone**
-
+Cross-account VPC's using a private hosted zone:
 - In VPC A (that owns the private hosted zone), create a VPC association authorization using CLI `create-vpc-association-authorization`
 - In VPC B (with resources trying to use Route53), create a VPC association using CLI.
 - (*optional*). Remove the association authorization for security?
@@ -160,3 +159,4 @@ References:
 - Origins use `Cache-Control: max-age=N` header to increase Cloudfront cache retention (increase cache hit ratio)
 - Use Field-level encryption (up to 10 data fields) uses public/private key auth. 
 - Use [origin groups with failover option](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html) to increase availability. If origin 1 fails, CF routes request to secondary. 
+- Serve multiple domains via CF https: [use SNI or dedicated IP's](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cnames-https-dedicated-ip-or-sni.html#cnames-https-dedicated-ip)
