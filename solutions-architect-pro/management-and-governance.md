@@ -50,6 +50,8 @@ Maintenance Windows:
     - role needs `AmazonSSMManagedInstanceCore` policy
     - prerequisites: 
         - https outbound to ssm, ec2
+    - add security group to ENI's
+    - add [VPC endpoint to SSM](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-systems-manager-vpc-endpoints/)
 - connect to onprem VM's using `hybrid activation`
     - IAM service role associated with the hybrid activation used to register your on-permises servers
     > ❗You can't change the IAM service role associated with a hybrid activation. If you find that the service role does not contain the required permissions, you must deregister the managed instance and register it with a new hybrid activation that uses a service role with the required permissions
