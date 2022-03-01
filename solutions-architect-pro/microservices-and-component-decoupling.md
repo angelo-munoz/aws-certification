@@ -18,3 +18,7 @@ Spot instances cluster:
 - Open source integration framework. 
 - uses queueing, message bus, etc. 
 > Camel is an Open Source integration framework that empowers you to quickly and easily integrate various systems consuming or producing data. - https://camel.apache.org/
+
+## Containers vs VM
+- performance: containers spin up faster
+- size: containers smaller (MB's vs Gb)
