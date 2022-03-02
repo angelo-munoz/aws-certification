@@ -22,3 +22,5 @@ The node types in Amazon EMR are as follows:
   - *Master node*: A node that manages the cluster by running software components to coordinate the distribution of data and tasks among other nodes for processing. The master node tracks the status of tasks and monitors the health of the cluster. Every cluster has a master node, and it's possible to create a single-node cluster with only the master node.
   - *Core node*: A node with software components that run tasks and store data in the Hadoop Distributed File System (HDFS) on your cluster. Multi-node clusters have at least one core node.
   - *Task node*: A node with software components that only runs tasks and does not store data in HDFS. Task nodes are optional.
+
+![](https://media.tutorialsdojo.com/sap_emr_node_types.png)
