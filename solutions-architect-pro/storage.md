@@ -50,3 +50,25 @@ aws s3 presign s3://am-2022-02-26/test.txt --expires-in 30
 - fast OS for HPC, machine learning, etc. 
 - POSIX compliant so works OOTB w linux
 - integrates w S3 to pull data on demand
+
+## Storage Gateway
+- 3 flavors: Volume Gateway, File Gateway, Tape Gateway
+- Stored Volumes: 1 GiB to 16 TB
+
+Volume Gateway:
+- for disks
+- 2 types: Volume Storage Gateway and Volume Cached Gateway
+- Volume Storage
+    - Full volume
+    - Need local storage same size
+- Cached Volume Mode
+    - cache only frequently accessed
+- How it works: 
+    - VM in data center connects to iSCSI
+    - provision disks
+    - async data backup to S3 as block storage that can be restored for DR.
+- DR: 
+    - ❗take EBS snapshot then restore to EBS volume.
+
+![](https://docs.aws.amazon.com/storagegateway/latest/userguide/images/aws-storage-gateway-stored-diagram.png) 
+
