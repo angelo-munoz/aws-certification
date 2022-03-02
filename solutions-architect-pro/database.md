@@ -1,5 +1,9 @@
 # Database
 
+## RDS
+- supported RDBMS: 
+- not supported: Oracle RAC, SAP Hana
+
 ## Aurora
 - Supports cross-region read-replica *
 **Aurora Global Database**
@@ -24,3 +28,6 @@ The node types in Amazon EMR are as follows:
   - *Task node*: A node with software components that only runs tasks and does not store data in HDFS. Task nodes are optional.
 
 ![](https://media.tutorialsdojo.com/sap_emr_node_types.png)
+
+## Redshift
+- cross-region backup. Use `snapshot copy grant` feature that allows the destination region to decrypt using that key. 
