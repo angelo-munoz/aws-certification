@@ -77,3 +77,16 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 ## Event Bridge
 - serverless event bus
 - make rules, define source, handler and targets (functions, sns topics)
+
+## Elastic Beanstalk
+- simple application deployment service
+- create environments
+- deployment models:
+
+|Model | Approach | Speed | Impact
+|---|---|---|---|
+All at once | Overwrite each instance w new version | ⚡ | small downtime
+Rolling | deployed one batch of instances at a time | 🐢 | no downtime
+Rolling with additional batch | maintain the same bandwidth throughout the deployment. With this method, Elastic Beanstalk launches an extra batch of instances, then performs a rolling deployment. | 🐢🐢 | no downtime
+Immutable | blue/green. quick and safe rollback for failures | ⚡| no downtime
+Traffic splitting| canary. test portion of incoming traffic while keeping the rest of the traffic served by the old application version. | ⚡| possible small impact if new version is bad
