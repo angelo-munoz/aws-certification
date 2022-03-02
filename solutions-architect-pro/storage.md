@@ -72,3 +72,6 @@ Volume Gateway:
 
 ![](https://docs.aws.amazon.com/storagegateway/latest/userguide/images/aws-storage-gateway-stored-diagram.png) 
 
+## Data Lifecyle Manager
+- Amazon Data Lifecycle Manager (DLM) for EBS Snapshots provides a simple, automated way to back up data stored on Amazon EBS volumes. 
+- define backup and retention schedules for EBS snapshots by creating lifecycle policies based on tags. 
