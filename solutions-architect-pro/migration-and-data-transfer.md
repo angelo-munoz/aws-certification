@@ -36,3 +36,47 @@ Billing:
 References:
 - https://aws.amazon.com/opsworks/stacks/faqs/?nc=sn&loc=5
 - https://docs.aws.amazon.com/opsworks/latest/userguide/other-services-cp.html
+
+## Snow family
+|Type|Max Size|Use case
+|---|---|---|
+Snowball|80TB|Order several as needed. Up to 10 PB. Over that, use snowmobile
+Snowmobile|100 PB|Large transfers
+
+
+**Snowball Edge:**
+- replaces Snowball
+- 3 types - Storage-optimized, Compute-optimized, Compute-optimized w GPU
+    - Storage-optimized: 
+    - Compute-optimized:
+    - Compute-optimized w GPU:
+- can transfer using 3 methods: 
+    - File interface: 
+        - encrypts objects
+    - S3 transfer tool
+        - encrypts objects
+    - AWS IoT Greengrass 
+- Max storage: 60-80 TB
+- File interface (NFS share) built-in
+- Encrypts data by default (supports SSE-S3, SSE-KMS server side encryption). SSE-C (client owned encryption **not** supported)
+- Transfer speeds: up to 100 Gbit/second
+- Increase performance 🚀 by adding multiple transfers to the same Snowball
+
+Snowball hardware:
+- RJ45 (Cat6), SFP+ Copper (10Gb/s), SFP+ Optical
+
+**Required ports for Snowball**: [Reference](https://docs.aws.amazon.com/snowball/latest/developer-guide/port-requirements.html)
+|Port|Protocol|Comment|
+|---|---|---|
+22 (HTTP)|TCP|Device health check and for EC2 SSH
+2049 (HTTP)|TCP|NFS endpoint
+6078 (HTTP)|TCP|IAM HTTP endpoint
+6089 (HTTPS)|TCP|IAM HTTPS endpoint
+7078 (HTTP)|TCP|STS HTTP endpoint
+7089 (HTTPS)|TCP|STS HTTPS endpoint
+8080 (HTTP)|TCP|S3 HTTP endpoint
+8443 (HTTPS)|TCP|S3 HTTPS endpoint
+8008 (HTTP)|TCP|EC2 HTTP endpoint
+8243 (HTTPS)|TCP|EC2 HTTPS endpoint
+9091 (HTTP)|TCP|Endpoint for device management
+
