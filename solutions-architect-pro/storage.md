@@ -45,6 +45,18 @@ IAM user|Up to 7 days when using AWS Signature Version 4.
 aws s3 presign s3://am-2022-02-26/test.txt --expires-in 30
 ```
 - can [upload to folders](https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html) using presigned urls. Very interesting! 
+- Intelligent tiering only applies to objects > 128K
+- Storage tiers:
+
+|Tier|Cost|Speed|Use cases
+|---|---|---|---|
+S3 Standard|💲💲|millisecond access|Most. default if not specified
+S3 Intelligent Tiering|💲💲💲|millisecond access|auto-change classes based on access frequency. After 30 days transfer to diff tiers
+S3 Infrequent Access|charged for minimum 30 days ❗|millisecond access|
+S3 One-Zone IA|charged for minimum 30 days ❗|millisecond access|
+Glacier|💲|up to 6 hrs. instant retrieval available since 2021 reInvent|
+Glacier Deep Archive|💲|up to 12 hrs|
+
 
 ## Amazon FSx for Lustre
 - fast OS for HPC, machine learning, etc. 
