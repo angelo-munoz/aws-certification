@@ -19,8 +19,25 @@ References
 
 ## Cloudtrail
 - Audit trail of all changes made to infra and environment via API calls
-- Supports logging on multiple regions with the `is-multi-region-trail` option. 
+- Supports logging on multiple regions with the `is-multi-region-trail` option from CLI. 
 - Need to enable global for global services like `IAM`, `Cloudfront`, etc with `include-global-service-events` option
+- sends to S3, Cloudwatch logs, or Cloudwatch Insights
+- stores past 90 days worth of logs in the console or CLI, use S3 to search events past 90 days
+- `Organization trail` is set at organization level in the management account, and creates a trail that logs for all accounts and optionally, across all regions. 
+- setting single-region trails requires CLI 
+- log delivered within 15 mins of API call. Also see [SLA](https://aws.amazon.com/cloudtrail/sla/)
+- logs encrypted by default using SSE-S3 and can be customized using SSE-KMS
+
+Cloudwatch logs:
+- send trail to cloudwatch logs, and configure cloudwatch events for specific events
+- use SNS to notify of specific events and take action on it using Cloudwatch events, or AWS Systems Manager automation documents. 
+- Trail for all regions sends to single cloudwatch log group ❗
+
+CloudTrail Lake:
+- Use Sql-based queries to search trail logs
+- stored for 7 years
+- auditing solution
+
 
 ## Systems Manager: Patch manager
 
