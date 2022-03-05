@@ -13,6 +13,10 @@ Private VIF | Private IP's. Internal use
 Public VIF | communicate with all AWS services. Required for VPN over Direct Connect
 Transit VIF | access Amazon VPC Transit Gateways associated with Direct Connect gateways
 
+Support secure private connections (can't traverse the internet):
+- Use private VIF to DX and VPC, proxy VPN over appliances (EC2)
+- References: [Establish VPN over Direct Connect](https://aws.amazon.com/premiumsupport/knowledge-center/create-vpn-direct-connect/), and [AWS Direct Connect + VPN](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-vpn.html)
+
 ## Direct Connect Gateway
 - Connect VPC's across regions
 - Several VPC's share the same direct connect
