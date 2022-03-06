@@ -22,8 +22,9 @@ References:
 ## Elastic Block Storage (EBS)
 - Specific to single AZ only. single AZ failure will take down EBS, even though EBS has 4 9's availability (99.99%)
 - IOPS calculated at 3 iops/GB. ex: 100GB drive = 100 x 3 = 300 iops. Use `io1` or `io2` drives for performance intensive use-cases like databases. 
-- max IOPS = 16,000 iops
+- max IOPS = 16,000 iops (or 5.34 TiB), meaning volumes larger than 5TB will not give more iops since it's already at 16000 iops.
 - Multi-attach volumes. Can EBS be attached to multiple EC2 instances? Yes, with [multi-attach](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes-multi.html) with provisioned IOPS volumes: `io1` or `io2`. Block storage only, not [file system](https://aws.amazon.com/premiumsupport/knowledge-center/ebs-access-volumes-using-multi-attach/).
+
 
 ## EBS vs EFS vs S3
 - See the excellent article: [EBS Pricing and Performance: A Comparison with Amazon EFS and Amazon S3](https://cloud.netapp.com/blog/ebs-efs-amazons3-best-cloud-storage-system)
