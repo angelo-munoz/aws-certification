@@ -4,17 +4,27 @@
 - supported RDBMS: 
 - not supported: Oracle RAC, SAP Hana
 
+EBS Volume:
+- General purpose SSD (gp2) may decrease in performance after: `read replica creation, Multi-AZ conversion, and DB snapshot restoration`
+- Scaling storage: 
+  - possible with `modify-instance`. Does not cause service degradation but can take up to few hours to complete. 
+  - Can't request another storage change for 6 hrs
+  - See [Working with Storage for RDS Instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html)
+    - can't **reduce** the storage size, only increase
+    - size increase required by at least 10%
+
+
 ## Aurora
 - Supports cross-region read-replica *
-**Aurora Global Database**
 
+**Aurora Global Database**
 - Built-in cross-region replication
 
 ## Database Migration Service
 
 
 ## Data Warehouse Solutions
-### Redshift Spectrum
+## Redshift Spectrum
 - Service to query analytics data directly from S3
 
 ## Elastic Map Reduce (EMR)
@@ -31,3 +41,8 @@ The node types in Amazon EMR are as follows:
 
 ## Redshift
 - cross-region backup. Use `snapshot copy grant` feature that allows the destination region to decrypt using that key. 
+
+## DynamoDB
+- primary key = partition key alone OR partition key + sort key
+- global secondary index doesn't support strongly consistent reads. See [Read Consistency](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html)
+- Use [Conditional Writes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate) to prevent race conditions or catch-22's where multiple writers need to both write to the table. Ex: only update `price` to 8 if `price` is currently 10. That way, before you update, you get the current item, and add it to the conditional statement. 
