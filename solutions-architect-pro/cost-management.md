@@ -15,6 +15,7 @@ References:
 ## AWS Budgets
 - set budgets based on cost, savings, 
 - set alerts with triggers to Cloudwatch Events, or automated event hooks to apply SCP, IAM policy
+- management account can create budget for linked/member accounts. Set SCP on overrages to prevent spinning up new instances, or terminating instances w EC2 actions. 
 
 ## Savings Plans
 - 3 types: Compute, EC2, Sagemaker
