@@ -80,3 +80,17 @@ Snowball hardware:
 8243 (HTTPS)|TCP|EC2 HTTPS endpoint
 9091 (HTTP)|TCP|Endpoint for device management
 
+## The 5 R's of Migration
+![](https://media.tutorialsdojo.com/sap_migration_paths.png)
+1. **Rehost** ("lift and shift") – Migrate as is. Most popular
+
+2. **Replatform** ("lift, tinker and shift") – few small cloud optimizations toward tangible benefit without changing the core architecture of the application
+
+3. **Repurchase** ("drop and shop") – upgrade or buy different product
+
+4. **Refactor / Re-architect** – strong business need to add features, scale, or performance that can't be done in the app's current state/environment
+
+5. **Retire** – Sunset/turn off application
+
+6. **Retain** – stay the same. Maybe just upgraded, or too risky, or not cost/technically feasible to migrate. 
+
