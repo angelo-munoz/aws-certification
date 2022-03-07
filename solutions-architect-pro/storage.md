@@ -87,6 +87,9 @@ Volume Gateway:
 - DR: 
     - ❗take EBS snapshot then restore to EBS volume.
 
+Security: 
+- Uses [Challenge-Handshake Authentication Protocol (CHAP)](https://docs.aws.amazon.com/storagegateway/latest/userguide/GettingStartedConfigureChap.html) to authenticate against the iSCSI target. Protects against replay attacks
+
 ![](https://docs.aws.amazon.com/storagegateway/latest/userguide/images/aws-storage-gateway-stored-diagram.png) 
 
 ## Data Lifecyle Manager
