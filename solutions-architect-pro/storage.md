@@ -18,6 +18,7 @@ References:
 - Network File System (NFS)-based block storage in the cloud
 - More expensive💲than EBS ($0.30/GB EFS vs $0.10/GB for EBS) BUT cheaper for multiple volumes since only pay once w EFS regardless of connected volumes, but pay for each volume w EBS
 - Highly available (survives single AZ failure)
+- Does not audit access
 
 ## Elastic Block Storage (EBS)
 - Specific to single AZ only. single AZ failure will take down EBS, even though EBS has 4 9's availability (99.99%)
