@@ -59,6 +59,9 @@ S3 One-Zone IA|charged for minimum 30 days, and has access fee ❗|millisecond a
 Glacier|💲|up to 6 hrs. instant retrieval available since 2021 reInvent|
 Glacier Deep Archive|💲|up to 12 hrs|
 
+Versioning:
+- Enable on existing bucket = existing objects get version `null`, and new objects objects get `version 1`, while edited objects will the first version as `null` and subsequent versions will have an alphanumeric version ID. 
+
 
 ## Amazon FSx for Lustre
 - fast OS for HPC, machine learning, etc. 
