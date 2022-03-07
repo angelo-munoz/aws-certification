@@ -165,3 +165,9 @@ References:
 - Use [origin groups with failover option](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html) to increase availability. If origin 1 fails, CF routes request to secondary. 
 - Serve multiple domains via CF https: [use SNI or dedicated IP's](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cnames-https-dedicated-ip-or-sni.html#cnames-https-dedicated-ip)
 - Can cache by HTTP headers but `User-Agent` has so many variations it would send many requests back to the origin. Recommend using `Lambda@Edge` to inspect the `User-Agent` header and do content negotiation. 
+- 30 second default origin response time can be raised to 60 seconds in console. Support case can raise to max 180 seconds. 
+
+## API Gateway
+- 10,000 requests/sec max limit
+- 30 second max request timeout
+- 10 MB max payload size

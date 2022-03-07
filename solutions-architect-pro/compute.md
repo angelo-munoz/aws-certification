@@ -30,6 +30,7 @@ Quotas:
 > A single shard can ingest up to 1 MB of data per second (including partition keys) or 1,000 records per second for writes. Similarly, if you scale your stream to 5,000 shards, the stream can ingest up to 5 GB per second or 5 million records per second. If you need more ingest capacity, you can easily scale up the number of shards in the stream using the AWS Management Console or the UpdateShardCount API.
 - 50 streams per account
 - 500 shards per account in US-east-1 (Virginia), us-west-2 (Oregon), eu-west-1 (Ireland), 200 in other regions
+- Can group items for downstream lambda processing (good for release valve against high lambda throughput leading to downstream throttling)
 
 ## Compute Optimizer
 - Analyzes current workload and makes recommendations to improve performance, lower cost, and for better resource fit
