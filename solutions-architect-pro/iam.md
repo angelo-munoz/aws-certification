@@ -86,6 +86,7 @@ References:
 - does authentication
 - not encrypted in transit - needs TLS
 - linked w [Kerberos](https://en.wikipedia.org/wiki/Kerberos_(protocol)) for authentication 
+- authenticate to LDAP first, then broker service (Cognito), then STS (with the assumed role), to get temp creds, which the app uses to access the AWS resource (S3, etc). Authenticate first!
 
 
 ![SSO w LDAP](https://media.tutorialsdojo.com/sap_sso_ldap.png)
@@ -98,4 +99,6 @@ References:
 ## Single Sign-on (SSO)
 - Uses SAML 2.0
 
+## Federation
+- authenticate by role, not user. Role trust policy must list the IdP as principal. 
 
