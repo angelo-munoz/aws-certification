@@ -34,3 +34,6 @@ Quotas:
 - Analyzes current workload and makes recommendations to improve performance, lower cost, and for better resource fit
 - free to use
 - supports organizations
+
+## Autoscaling
+- Cannot span AZs across regions
