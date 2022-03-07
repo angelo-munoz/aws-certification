@@ -12,6 +12,8 @@ EBS Volume:
   - See [Working with Storage for RDS Instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html)
     - can't **reduce** the storage size, only increase
     - size increase required by at least 10%
+    - During failover, the DNS CNAME is updated from primary to secondary, not the IP address. ❗ 
+    - to force a failover, do a `reboot instance`
 
 
 ## Aurora
