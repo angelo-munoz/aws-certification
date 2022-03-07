@@ -164,3 +164,4 @@ References:
 - Use Field-level encryption (up to 10 data fields) uses public/private key auth. 
 - Use [origin groups with failover option](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html) to increase availability. If origin 1 fails, CF routes request to secondary. 
 - Serve multiple domains via CF https: [use SNI or dedicated IP's](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cnames-https-dedicated-ip-or-sni.html#cnames-https-dedicated-ip)
+- Can cache by HTTP headers but `User-Agent` has so many variations it would send many requests back to the origin. Recommend using `Lambda@Edge` to inspect the `User-Agent` header and do content negotiation. 
