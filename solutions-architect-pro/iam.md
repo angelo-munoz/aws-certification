@@ -81,16 +81,23 @@ Sample policy:
 ```json
 {
   "Version": "2012-10-17",
-  "Statements": [
+  "Statement": [
     {
-      "Sid":"",
+      "Sid":"001",
       "Principal": "",
-      "Effect":"",
-      "Action":"",
-      "Resource":"",
+      "Effect":"Allow",
+      "Action":"logs.*",
+      "Resource":"*",
+      "Condition":""      
+    },
+    {
+      "Sid":"002",
+      "Principal": "",
+      "Effect":"Deny",
+      "Action":"ec2.*",
+      "Resource":"*",
       "Condition":""      
     }
-
   ]
 }
 ```
