@@ -34,11 +34,12 @@
 - To exclude reserved instances, in billing console, add the account to the excluded reserved instances sharing
 
 SCP exceptions: 
-1. Only **accounts** created after Sept 15, 2017 can control these actions with SCP's. That is, accounts before this date cannot control these actions with SCP's: 
+- Only **accounts** created after Sept 15, 2017 can control these actions with SCP's. That is, accounts before this date cannot control these actions with SCP's: 
     - Enable or disable multi-factor authentication on the root user
     - Create, update, or delete x.509 keys for the root user
     - Change the root user's password
     - Create, update, or delete root access keys
+- SCP's can only have 1 statement object. Consolidate into an array as needed. 
 
 
 References
