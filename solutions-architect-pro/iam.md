@@ -77,6 +77,24 @@ Federate access to the AWS Console following these steps:
 - Identity. Defines the actions a user, or role can do across several resources. 
 - Resource. Attach to resource (ex: S3) and specify which identities can perform specified actions
 
+Sample policy: 
+```json
+{
+  "Version": "2012-10-17",
+  "Statements": [
+    {
+      "Sid":"",
+      "Principal": "",
+      "Effect":"",
+      "Action":"",
+      "Resource":"",
+      "Condition":""      
+    }
+
+  ]
+}
+```
+
 References: 
 - https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html
 
