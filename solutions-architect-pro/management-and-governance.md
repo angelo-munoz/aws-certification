@@ -96,9 +96,14 @@ TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metad
 - make rules, define source, handler and targets (functions, sns topics)
 
 ## Elastic Beanstalk
-- simple application deployment service
+- simple application provisioning/management service
 - create environments
-- deployment models:
+- deployment strategies:
+  - `All-at-Once`: (in-place) overwrite existing infra
+  - `Rolling`: Splits the instances into batches and deploys to one batch at a time
+  - Rolling with Additional Batch: Splits the deployments into batches but for the first batch creates new EC2 instances instead of deploying on the existing EC2 instances. 
+  - Immutable: (Blue/green) If you need to deploy with a new instance instead of using an existing instance.
+  - Traffic Splitting: (Canary) Performs immutable deployment and then forwards percentage of traffic to the new instances for a pre-determined duration of time. If the instances stay healthy, then forward all traffic to new instances and shut down old instances.
 
 |Model | Approach | Speed | Impact
 |---|---|---|---|

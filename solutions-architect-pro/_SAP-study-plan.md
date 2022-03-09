@@ -194,12 +194,12 @@ AWS services are grouped according to their primary functions. While some of the
 - Amazon Simple Email Service (Amazon SES)
 
 **Blockchain:**
-- Amazon Managed Blockchain❗
+- Amazon Managed Blockchain
 
 **Compute:**
 - AWS Batch
 - Amazon EC2
-- AWS Elastic Beanstalk❗
+- AWS Elastic Beanstalk
 - Amazon Elastic Container Service (Amazon ECS)
 - Amazon Elastic Kubernetes Service (Amazon EKS)❗
 - Elastic Load Balancing

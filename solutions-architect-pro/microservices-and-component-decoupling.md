@@ -28,3 +28,9 @@ Spot instances cluster:
 - has same industry API's so easy to migrate
 - Messaging service just like SNS, Eventbridge but industry versions
 ![](https://d1.awsstatic.com/product-marketing/Amazon-MQ/Amazon%20MQ%20HIW%20Diagram.78e380e8a97064c8f751c1569481a304644490b5.jpg)
+
+## Elastic Kubernetes Service
+- Managed Kubernetes service in AWS
+- Concepts: pods
+- use Fargate (serverless) or EC2 nodes
+![](https://d1.awsstatic.com/product-page-diagram_Amazon-EKS%402x.ddc48a43756bff3baead68406d3cac88b4151a7e.ddc48a43756bff3baead68406d3cac88b4151a7e.png)
