@@ -128,3 +128,13 @@ References:
 ## Federation
 - authenticate by role, not user. Role trust policy must list the IdP as principal. 
 
+## IAM Policy Evaluation Process
+- Order of evaluation: 
+  1. Authentication
+  2. Determine resources
+  3. Get Policies
+  4. Determine access based on policies and resources
+  
+  See [Source](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html)
+
+
