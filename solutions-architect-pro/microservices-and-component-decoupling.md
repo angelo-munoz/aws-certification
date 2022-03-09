@@ -32,5 +32,7 @@ Spot instances cluster:
 ## Elastic Kubernetes Service
 - Managed Kubernetes service in AWS
 - Concepts: pods
+  - `Pod`: a group of containers with shared infrastructure (storage, network, etc)
+  - `Controller`: ..?
 - use Fargate (serverless) or EC2 nodes
 ![](https://d1.awsstatic.com/product-page-diagram_Amazon-EKS%402x.ddc48a43756bff3baead68406d3cac88b4151a7e.ddc48a43756bff3baead68406d3cac88b4151a7e.png)
