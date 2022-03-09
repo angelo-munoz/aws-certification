@@ -26,3 +26,6 @@ Reference: https://aws.amazon.com/worklink/
 ## Reducing Hospital Readmissions
 - Send msg to S3, lambda trigger, SQS, Lambda, outbound to Amazon Connect which makes the outbound call
 - See the [architecture diagram](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/reduce-hospital-readmissions-ra.pdf)
+
+## Amazon Pinpoint
+- customer engagement platform, outbound and inbound marketing communications service, using emails, SMS, push, voice or in-app messaging
