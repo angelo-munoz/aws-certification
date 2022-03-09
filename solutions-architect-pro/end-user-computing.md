@@ -18,3 +18,11 @@ Reference: https://aws.amazon.com/worklink/
 
 **References:**
 - https://aws.amazon.com/appstream2
+
+## AWS Comprehend Medical
+- Extract information from unstructured medical text data
+- Uses Natural language processing
+
+## Reducing Hospital Readmissions
+- Send msg to S3, lambda trigger, SQS, Lambda, outbound to Amazon Connect which makes the outbound call
+- See the [architecture diagram](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/reduce-hospital-readmissions-ra.pdf)
