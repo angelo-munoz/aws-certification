@@ -205,7 +205,7 @@ AWS services are grouped according to their primary functions. While some of the
 - Elastic Load Balancing
 - AWS Fargate
 - AWS Lambda
-- Amazon Lightsail❗
+- Amazon Lightsail
 - AWS Outposts
 
 **Containers:**
@@ -220,11 +220,11 @@ AWS services are grouped according to their primary functions. While some of the
 - Amazon Redshift
 
 **Developer tools:**
-- AWS Cloud9❗
-- AWS CodeBuild❗
-- AWS CodeCommit❗
-- AWS CodeDeploy❗
-- AWS CodePipeline❗
+- AWS Cloud9
+- AWS CodeBuild
+- AWS CodeCommit
+- AWS CodeDeploy
+- AWS CodePipeline
 
 **End user computing:**
 - Amazon AppStream 2.0
@@ -235,11 +235,11 @@ AWS services are grouped according to their primary functions. While some of the
 
 **Machine learning:**
 - Amazon Comprehend
-- Amazon Forecast❗
+- Amazon Forecast
 - Amazon Lex
 - Amazon Rekognition
 - Amazon SageMaker
-- Amazon Transcribe❗
+- Amazon Transcribe
 - Amazon Translate❗
 
 **Management and governance:**

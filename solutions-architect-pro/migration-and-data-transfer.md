@@ -95,3 +95,23 @@ Snowball hardware:
 
 6. **Retain** – stay the same. Maybe just upgraded, or too risky, or not cost/technically feasible to migrate. 
 
+## AWS Data Sync
+- Data sync service
+- use cases: migrations
+- encryption
+- VPC support for not traversing internet (security)
+- `location`: the sending or receiving service. inter-region transfer supported. 
+  - Network File System (NFS)
+  - Server Message Block (SMB)
+
+Hadoop Managed File System (HDFS)
+
+On-premises (self-managed) object storage
+
+Amazon Elastic File System (Amazon EFS)
+
+Amazon FSx for Windows File Server
+
+Amazon FSx for Lustre
+
+Amazon Simple Storage Service (Amazon S3)
