@@ -29,6 +29,7 @@ References:
 - Supports linux, Windows in cloud
 - Supports cloud AND on-prem servers (hybrid architecture)
 - Codepipeline more modern? Opsworks legacy? 
+![](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/images/figure-2.png)
 
 Billing:
 - based on number of nodes connected to puppet master (or chef server), running time, and EC2 puppet master (or chef server) run time
