@@ -39,3 +39,11 @@ Quotas:
 
 ## Autoscaling
 - Cannot span AZs across regions
+
+## IoT Core
+- [MQTT](https://mqtt.org/): pub/sub messaging protocol for IoT. Use MQTT clients on IoT devices with AWS IoT Core. 
+- IoT core supports LoRaWan, MQTT, HTTPS transfer
+- [Rules Engine](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html), sql-based language to filter messages to send to downstream services like S3, Lambda. 
+- [send to Lambda](https://docs.aws.amazon.com/lambda/latest/dg/services-iot.html) (asynchronously) when need to forward to other AWS services
+
+
