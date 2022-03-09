@@ -29,3 +29,10 @@ Reference: https://aws.amazon.com/worklink/
 
 ## Amazon Pinpoint
 - customer engagement platform, outbound and inbound marketing communications service, using emails, SMS, push, voice or in-app messaging
+
+## Alexa for business
+- improve meeting room experience
+- make employees more productive by enriching the alexa voice commands with business context like conference room, location, device available in the room, etc to support commands like "alexa, who booked this room?", "Alexa, book this room" or other commands. 
+- supports custom commands
+- integrates w employee calendar to support commands like "Alexa, join the meeting." 
+![](https://d1.awsstatic.com/product-marketing/A4B/product-page-diagram-AlexaForBusiness_how-it-works.2d3a37c5a31a5358d01ed8538327743d99078324.png)

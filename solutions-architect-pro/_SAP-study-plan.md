@@ -183,14 +183,14 @@ AWS services are grouped according to their primary functions. While some of the
 - Cost Explorer
 
 **Application integration:**
-- Amazon MQ❗
+- Amazon MQ
 - Amazon Simple Notification Service (Amazon SNS)
 - Amazon Simple Queue Service (Amazon SQS)
 - AWS Step Functions
 
 **Business applications:**
-- Amazon Alexa❗
-- Amazon Alexa for Business❗
+- Amazon Alexa
+- Amazon Alexa for Business
 - Amazon Simple Email Service (Amazon SES)
 
 **Blockchain:**

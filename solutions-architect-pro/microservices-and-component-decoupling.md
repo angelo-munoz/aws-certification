@@ -22,3 +22,9 @@ Spot instances cluster:
 ## Containers vs VM
 - performance: containers spin up faster
 - size: containers smaller (MB's vs Gb)
+
+## Amazon MQ
+- message broker service for ApacheMQ and RabbitMQ
+- has same industry API's so easy to migrate
+- Messaging service just like SNS, Eventbridge but industry versions
+![](https://d1.awsstatic.com/product-marketing/Amazon-MQ/Amazon%20MQ%20HIW%20Diagram.78e380e8a97064c8f751c1569481a304644490b5.jpg)
