@@ -127,16 +127,16 @@ TOTAL | 100
 
 5.2 Determine a strategy to improve an existing solution for operational excellence.
   - Determine the most appropriate logging and monitoring strategy <sup>Cloudwatch, xray</sup>
-  - Recommend the appropriate AWS offering(s) to enable configuration management automation <sup>Chef, Puppet, Systems Manager</sup>❗
+  - Recommend the appropriate AWS offering(s) to enable configuration management automation <sup>Chef, Puppet, Systems Manager</sup>
 
 5.3 Determine a strategy to improve the reliability of an existing solution.
   - Evaluate existing architecture to determine areas that are not sufficiently reliable <sup>Well architected framework</sup>
   - Remediate single points of failure <sup>Well architected framework</sup>
   - Enable data replication, self-healing, and elastic features and services <sup>Well archicted framework</sup>
-  - Test the reliability of the new solution <sup>lambda functions, SAM, cloudformation</sup>❗
+  - Test the reliability of the new solution <sup>lambda functions, SAM, cloudformation</sup>
 
 5.4 Determine a strategy to improve the performance of an existing solution.
-  - Reconcile current performance metrics against performance targets <sup>Trusted Advisor, cloudwatch</sup>
+  - Reconcile current performance metrics against performance targets <sup>Trusted Advisor❗, cloudwatch</sup>
   - Identify and examine performance bottlenecks <sup>CLoudwatch logs, single-points of failure - well architected framework</sup>
   - Recommend and test potential remediation solutions <sup>cloudformation</sup>
 
@@ -146,7 +146,7 @@ TOTAL | 100
   - Enable manual and/or automated responses to the detection of vulnerabilities <sup>?</sup>❗
 
 5.6 Determine how to improve the deployment of an existing solution.
-  - Evaluate appropriate tooling to enable infrastructure as code <sup>cloudwatch, SAM</sup>
+  - Evaluate appropriate tooling to enable infrastructure as code <sup>cloudwatch, SAM, Beanstalk, Code Deploy, Code Pipeline❗</sup>
   - Evaluate current deployment processes for improvement opportunities <sup>cloudwatch, SAM</sup>
   - Test automated deployment and rollback strategies <sup>lambda hooks in pipeline</sup>
 
@@ -183,30 +183,30 @@ AWS services are grouped according to their primary functions. While some of the
 - Cost Explorer
 
 **Application integration:**
-- Amazon MQ
+- Amazon MQ❗
 - Amazon Simple Notification Service (Amazon SNS)
 - Amazon Simple Queue Service (Amazon SQS)
 - AWS Step Functions
 
 **Business applications:**
-- Amazon Alexa
-- Amazon Alexa for Business
+- Amazon Alexa❗
+- Amazon Alexa for Business❗
 - Amazon Simple Email Service (Amazon SES)
 
 **Blockchain:**
-- Amazon Managed Blockchain
+- Amazon Managed Blockchain❗
 
 **Compute:**
 - AWS Batch
 - Amazon EC2
-- AWS Elastic Beanstalk
+- AWS Elastic Beanstalk❗
 - Amazon Elastic Container Service (Amazon ECS)
-- Amazon Elastic Kubernetes Service (Amazon EKS)
+- Amazon Elastic Kubernetes Service (Amazon EKS)❗
 - Elastic Load Balancing
 - AWS Fargate
 - AWS Lambda
-- Amazon Lightsail
-- AWS Outposts
+- Amazon Lightsail❗
+- AWS Outposts❗
 
 **Containers:**
 - Amazon Elastic Container Registry (Amazon ECR)
@@ -220,30 +220,30 @@ AWS services are grouped according to their primary functions. While some of the
 - Amazon Redshift
 
 **Developer tools:**
-- AWS Cloud9
-- AWS CodeBuild
-- AWS CodeCommit
-- AWS CodeDeploy
-- AWS CodePipeline
+- AWS Cloud9❗
+- AWS CodeBuild❗
+- AWS CodeCommit❗
+- AWS CodeDeploy❗
+- AWS CodePipeline❗
 
 **End user computing:**
 - Amazon AppStream 2.0
 - Amazon WorkSpaces
 
 **Front-end web and mobile:**
-- AWS AppSync
+- AWS AppSync❗
 
 **Machine learning:**
-- Amazon Comprehend
-- Amazon Forecast
+- Amazon Comprehend❗
+- Amazon Forecast❗
 - Amazon Lex
 - Amazon Rekognition
 - Amazon SageMaker
-- Amazon Transcribe
-- Amazon Translate
+- Amazon Transcribe❗
+- Amazon Translate❗
 
 **Management and governance:**
-- AWS Auto Scaling
+- AWS Auto Scaling❗
 - AWS Backup 
 - AWS CloudFormation 
 - AWS CloudTrail 
@@ -252,7 +252,7 @@ AWS services are grouped according to their primary functions. While some of the
 - AWS Config 
 - AWS Control Tower 
 - Amazon EventBridge 
-- AWS License Manager 
+- AWS License Manager ❗
 - AWS Organizations 
 - AWS Resource Access Manager 
 - AWS Service Catalog 
@@ -261,11 +261,11 @@ AWS services are grouped according to their primary functions. While some of the
 - AWS Well-Architected Tool 
 
 **Media services:** 
-- Amazon Elastic Transcoder
+- Amazon Elastic Transcoder❗
 
 **Migration and transfer:** 
 - AWS Database Migration Service (AWS DMS) 
-- AWS DataSync 
+- AWS DataSync ❗
 - AWS Migration Hub 
 - AWS Server Migration Service (AWS SMS) 
 - AWS Snowball - AWS Transfer Family
@@ -284,16 +284,16 @@ AWS services are grouped according to their primary functions. While some of the
 - AWS Certificate Manager (ACM) 
 - Amazon Cognito 
 - AWS Directory Service 
-- Amazon GuardDuty 
+- Amazon GuardDuty ❗
 - AWS Identity and Access Management (IAM) 
-- Amazon Inspector 
+- Amazon Inspector ❗
 - AWS Key Management Service (AWS KMS)
 - Amazon Macie
 - AWS Resource Access Manager
 - AWS Secrets Manager
-- AWS Security Hub
+- AWS Security Hub❗
 - AWS Shield
-- AWS Single Sign-On
+- AWS Single Sign-On❗
 - AWS WAF
 
 **Storage:**
@@ -302,4 +302,4 @@ AWS services are grouped according to their primary functions. While some of the
 - Amazon FSx
 - Amazon S3
 - Amazon S3 Glacier
-- AWS Storage Gatewa
+- AWS Storage Gateway
