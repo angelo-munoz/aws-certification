@@ -55,3 +55,15 @@ Quotas:
 - [Ethereum](https://aws.amazon.com/blockchain/what-is-ethereum/): public blockchain network. Can join another ethereum network
 - Many use-cases. Food, goods, jewelry supply chain management, insurance contracts, etc.
 
+## AWS Outposts
+- AWS Compute servers running on-prem
+- Outposts Servers (1U/2U servers) and Outposts Racks (4U servers and racks)
+
+## Amazon Lightsail
+- quickly launch small web-apps, websites preconfigured w network, storage, etc
+- concept:  `Virtual Private Server`
+- use cases: test web apps, poc's, small business apps, etc.
+- low cost
+
+References: 
+- https://aws.amazon.com/lightsail/

@@ -36,3 +36,10 @@ Reference: https://aws.amazon.com/worklink/
 - supports custom commands
 - integrates w employee calendar to support commands like "Alexa, join the meeting." 
 ![](https://d1.awsstatic.com/product-marketing/A4B/product-page-diagram-AlexaForBusiness_how-it-works.2d3a37c5a31a5358d01ed8538327743d99078324.png)
+
+## Amazon Transcribe
+- speech to text service
+
+## Amazon Comprehend
+- extract insights from text stored in S3
+![](https://d1.awsstatic.com/Comprehend/Use-cases_Customer-analytics.93d8f858f529bec19d1899c9d8a5625d3989e621.png)

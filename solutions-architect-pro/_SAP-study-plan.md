@@ -201,12 +201,12 @@ AWS services are grouped according to their primary functions. While some of the
 - Amazon EC2
 - AWS Elastic Beanstalk
 - Amazon Elastic Container Service (Amazon ECS)
-- Amazon Elastic Kubernetes Service (Amazon EKS)❗
+- Amazon Elastic Kubernetes Service (Amazon EKS)
 - Elastic Load Balancing
 - AWS Fargate
 - AWS Lambda
 - Amazon Lightsail❗
-- AWS Outposts❗
+- AWS Outposts
 
 **Containers:**
 - Amazon Elastic Container Registry (Amazon ECR)
@@ -234,7 +234,7 @@ AWS services are grouped according to their primary functions. While some of the
 - AWS AppSync❗
 
 **Machine learning:**
-- Amazon Comprehend❗
+- Amazon Comprehend
 - Amazon Forecast❗
 - Amazon Lex
 - Amazon Rekognition
