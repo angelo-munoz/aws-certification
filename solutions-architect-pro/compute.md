@@ -46,6 +46,7 @@ Quotas:
 ## Autoscaling
 - Cannot span AZs across regions
 
+
 ## IoT Core
 - [MQTT](https://mqtt.org/): pub/sub messaging protocol for IoT. Use MQTT clients on IoT devices with AWS IoT Core. 
 - IoT core supports LoRaWan, MQTT, HTTPS transfer
@@ -76,3 +77,7 @@ Quotas:
 
 References: 
 - https://aws.amazon.com/lightsail/
+
+## Reserved Instances
+- Ondemand capacity reservation is an option (only uses when the instance is the same family, type, AZ)
+- 

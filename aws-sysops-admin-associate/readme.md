@@ -44,7 +44,9 @@ Notes:
 - An Aurora MySQL replica runs in MySQL read-only mode so no changes to data or schema allowed: `ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement`
 
 ## VPC
-**VPC S3 endpoints**
+- VPC CIDR cannot be extended. But can associate a secondary CIDR block to make room. See [Modifying the CIDR block on a VPC](https://aws.amazon.com/premiumsupport/knowledge-center/vpc-modify-cidr-more-hosts/)
+
+VPC S3 endpoints:
 
 Endpoints. CLI Command. 
 ```sh

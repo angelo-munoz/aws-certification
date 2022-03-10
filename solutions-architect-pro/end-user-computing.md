@@ -43,6 +43,7 @@ References:
 
 ## Amazon Transcribe
 - speech to text service
+- source **MUST be S3**, not EFS, EBS, etc. 
 
 ## Amazon Comprehend
 - extract insights from text stored in S3
