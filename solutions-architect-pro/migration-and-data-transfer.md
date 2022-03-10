@@ -6,6 +6,32 @@
 - Supports up to 16TB drives
 - Supports incremental sync
 - Minimize downtime
+- Requires VMWare vSphere to run a VM in there and migrate running instances. 
+    - To migrate to cloud without SMS, manually upload image to S3, then create AMI from S3. Ex scripts: 
+    ```sh
+    # import VMDK image from S3
+    aws ec2 import-image --description "My server disks" --disk-containers "file://C:\import\containers.json"
+
+    # containers.json
+    [
+        {
+            "Description": "First disk",
+            "Format": "vmdk",
+            "UserBucket": {
+                "S3Bucket": "my-import-bucket",
+                "S3Key": "disks/my-server-vm-disk1.vmdk"
+            }
+        },          
+        {
+            "Description": "Second disk",
+            "Format": "vmdk",
+            "UserBucket": {
+                "S3Bucket": "my-import-bucket",
+                "S3Key": "disks/my-server-vm-disk2.vmdk"
+            }
+        }
+    ]
+    ```
 
 References: 
 - [Free AWS Cloud Migration Services](https://aws.amazon.com/free/migration/)

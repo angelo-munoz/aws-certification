@@ -68,6 +68,10 @@ Versioning:
 - POSIX compliant so works OOTB w linux
 - integrates w S3 to pull data on demand
 
+## Amazon FSx for Windows
+- Has SLA
+- Support SMB file share, native windows tech
+
 ## Storage Gateway
 - 3 flavors: Volume Gateway, File Gateway, Tape Gateway
 - Stored Volumes: 1 GiB to 16 TB

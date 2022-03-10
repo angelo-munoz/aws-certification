@@ -10,3 +10,6 @@ See [IAM](./iam.md)
 - customer managed or AWS managed
 - AWS managed: generic on customer's behalf. 
 - Customer managed: key material can be imported. More control options. 
+
+References: 
+- https://docs.aws.amazon.com/whitepapers/latest/kms-best-practices/aws-managed-and-customer-managed-cmks.html

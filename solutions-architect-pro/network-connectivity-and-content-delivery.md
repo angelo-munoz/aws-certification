@@ -179,3 +179,8 @@ References:
 - 10,000 requests/sec max limit
 - 30 second max request timeout
 - 10 MB max payload size
+
+## Elastic Load Balancer
+- Can only have  `https` listener when configured for SSL termination. otherwise, must use TCP port 443
+- Can authenticate using Cognito or external OIDC provider. 
+- no client-side certs supported - must go to EC2 instances to support that. 
