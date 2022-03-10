@@ -5,3 +5,8 @@
 
 ## Lightweight Directory Access Protocol (LDAP)
 See [IAM](./iam.md)
+
+## AWS Key Management Service (KMS)
+- customer managed or AWS managed
+- AWS managed: generic on customer's behalf. 
+- Customer managed: key material can be imported. More control options. 

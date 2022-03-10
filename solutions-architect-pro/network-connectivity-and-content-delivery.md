@@ -145,12 +145,20 @@ References:
 - Faster, more reliable connections
 - More secure. Don't have to traverse internet
 
-## Interface Endpoints
+## VPC Interface Endpoints
 - use private link under the hood
 - creates 2 ENI's across 2 of your subnets, and security group applied to them
 - routes traffic through those ENI's using NAT
 - assumes overlapping IP's so uses NAT under the hood
 - Specific to: AWS Service (EC2, S3, etc), Marketplace, PrivateLink Ready partner services, custom endpoint services (search by name)
+
+## VPC Gateway Endpoints 
+- Uses DNS with prefix lists
+- supports only S3 and DynamoDB at this time
+> All types of policies — IAM user policies, endpoint policies, S3 bucket policies, and Amazon S3 ACL policies (if any) — must grant the necessary permissions for access to Amazon S3 to succeed.
+> 
+> AWS recommends that you use IAM `conditions`, rather than the IAM `Principal` element, in VPC endpoint policies when you are restricting use of the endpoint to particular callers. Examples of such conditions are `aws:PrincipalArn`, `aws:PrincipalAccount`, `aws:PrincipalOrgId`, and `aws:PrincipalOrgPaths`. For more information about condition context keys, see AWS global condition context keys in the AWS Identity and Access Management User Guide.
+
 
 ## Cloudfront
 - Content delivery
