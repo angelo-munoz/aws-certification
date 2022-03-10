@@ -52,6 +52,9 @@ Quotas:
 - [Rules Engine](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html), sql-based language to filter messages to send to downstream services like S3, Lambda. 
 - [send to Lambda](https://docs.aws.amazon.com/lambda/latest/dg/services-iot.html) (asynchronously) when need to forward to other AWS services
 
+## IoT Analytics
+- good but slow, seconds to minutes. If need near-real-time, use Kinesis Data Analytics (milliseconds processing time)
+
 ## Amazon Managed Blockchain
 - Provisions, scales, and manages the complex blockchain network implementations
 - auto-renew certs

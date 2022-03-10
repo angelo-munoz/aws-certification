@@ -16,8 +16,12 @@ Reference: https://aws.amazon.com/worklink/
 - Service for securely streaming individual applications
 - differs from Workspaces: AppStream is for individual applications and WorkSpaces is for an entire environment for any use. 
 
-**References:**
+References:
 - https://aws.amazon.com/appstream2
+
+## Amazon Workspaces
+- Desktop as a service
+- Supports Linux and Windows
 
 ## AWS Comprehend Medical
 - Extract information from unstructured medical text data

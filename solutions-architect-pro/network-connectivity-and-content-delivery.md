@@ -184,3 +184,4 @@ References:
 - Can only have  `https` listener when configured for SSL termination. otherwise, must use TCP port 443
 - Can authenticate using Cognito or external OIDC provider. 
 - no client-side certs supported - must go to EC2 instances to support that. 
+- Cross-zone load balancing. Each ELB node routes traffic to all targets across AZ's. Required on ALB's, default `OFF` in NLB's and Gateway LB's. Classic, it depends. See [Understanding Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html#availability-zones)

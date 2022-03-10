@@ -3,6 +3,7 @@
 ## RDS
 - supported RDBMS: 
 - not supported: Oracle RAC, SAP Hana
+- `Available` updates can be deferred indefinitely. `Required` updates are deferred until an AWS-defined max date. 
 
 EBS Volume:
 - General purpose SSD (gp2) may decrease in performance after: `read replica creation, Multi-AZ conversion, and DB snapshot restoration`
@@ -17,12 +18,15 @@ EBS Volume:
 
 
 ## Aurora
-- Supports cross-region read-replica *
+- Supports cross-region read-replica
 
 **Aurora Global Database**
 - Built-in cross-region replication
 
 ## Database Migration Service
+- Migrate on-prem to cloud, cloud to cloud, cloud to onprem. But Not onprem to onprem
+- Supports one-time and continuous replication
+- Use in conjunction with the Schema Conversion Tool (SCT). Convert schema first w SCT, then DMS to fill data
 
 
 ## Data Warehouse Solutions
