@@ -179,6 +179,9 @@ References:
 - 10,000 requests/sec max limit
 - 30 second max request timeout
 - 10 MB max payload size
+- types: REST, HTTP, Websocket
+- Websocket:
+  - communicate w clients via `connections` API
 
 ## Elastic Load Balancer
 - Can only have  `https` listener when configured for SSL termination. otherwise, must use TCP port 443
