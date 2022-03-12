@@ -79,11 +79,13 @@ Versioning:
 Volume Gateway:
 - for disks
 - 2 types: Volume Storage Gateway and Volume Cached Gateway
-- Volume Storage
+- Volume Gateway Storage
     - Full volume
     - Need local storage same size
-- Cached Volume Mode
+    - Max 512 TB
+- Cached Volume Gateway Mode
     - cache only frequently accessed
+    - Max 1024 TB
 - How it works: 
     - VM in data center connects to iSCSI
     - provision disks

@@ -19,6 +19,7 @@ EBS Volume:
 
 ## Aurora
 - Supports cross-region read-replica
+- Supports Auto-scaling on read-replica, not master db
 
 **Aurora Global Database**
 - Built-in cross-region replication
