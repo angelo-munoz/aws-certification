@@ -49,7 +49,12 @@ References:
 - extract insights from text stored in S3
 ![](https://d1.awsstatic.com/Comprehend/Use-cases_Customer-analytics.93d8f858f529bec19d1899c9d8a5625d3989e621.png)
 
-# Amazon Forecast
+## Amazon Forecast
 - ML service for forecasting financial and business outcomes
 
 Reference: https://aws.amazon.com/forecast/#
+
+## CloudSearch
+- search text documents
+- source: file servers, S3, dynamodb, RDS
+- index returns link to resource or the document itself
