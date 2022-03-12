@@ -51,7 +51,7 @@ Combining multiple ethernets to act a single subnet. https://openvpn.net/communi
 ## DHCP Option sets
 VPC setting to change DHCP options for instances launched in that VPC. 
 Options: 
-- DNS
+- DNS. Default: AmazonProvidedDNS
 - NTP
 - Domain name
 - Net bios node servers
@@ -111,11 +111,15 @@ References:
 
 ## Route53 Resolver
 DNS service for **hybrid** environments (onprem/cloud)
-- `Inbound`: originates from onPrem to lookup VPC resources
-- `Outbound`: 
-  - originates from VPC to lookup onPrem resources
-  - uses `conditional forwarding rules`: forwards request to onPrem DNS
+- 2 types of `endpoints`: 
+  - `Inbound`: originates from onPrem to lookup VPC resources
+  - `Outbound`: 
+    - from VPC > lookup onPrem (other VPC) resources
+    - uses `conditional forwarding rules`: forwards request to onPrem DNS
 - Recursive DNS: one DNS server queries other DNS server to find the right IP address. See [Recursive DNS](https://www.cloudflare.com/learning/dns/what-is-recursive-dns/)
+- Can also be used for AD in VPC. AD will do DNS resolution of internal resources
+  - Create outbound endpoint with forwarding rule to internal DNS (such as AD)
+![](https://media.tutorialsdojo.com/sap_outbound_resolver.png)
 
 ![](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2018/11/19/resolver-1-howitworks-3.png)
 
